@@ -1,0 +1,27 @@
+h1 {
+  font-size: calc(3 * var(--default-font-size));
+}
+
+h2 {
+  font-size: calc(2.5 * var(--default-font-size));
+}
+
+h3 {
+  font-size: calc(2 * var(--default-font-size));
+}
+
+h4 {
+  font-size: calc(1.75 * var(--default-font-size));
+}
+
+h5 {
+  font-size: calc(1.5 * var(--default-font-size));
+}
+
+h6 {
+  font-size: calc(1.25 * var(--default-font-size));
+}
+
+p {
+  font-size: calc(4 * var(--default-font-size));
+}
