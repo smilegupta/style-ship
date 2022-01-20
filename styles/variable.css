@@ -1,6 +1,6 @@
 :root {
   /* 1rem = 16px */
-  --default-font-size: 0.875rem; /* 14px */
+  --default-font-size: 87.5%; /* 14px */
   --primary-color: #5851d8;
   --primary-bg: #5851d81a;
   --info-color: #5dc4eb;

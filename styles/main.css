@@ -11,11 +11,12 @@
 @import "./avatar.css";
 @import "./images.css";
 
+html {
+  font-size: var(--default-font-size);
+}
+
 body {
   font-family: "Roboto", sans-serif;
-  margin: 0px;
-  padding: 0px;
-  font-size: var(--default-font-size);
 }
 
 .container {
