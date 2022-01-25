@@ -8,6 +8,7 @@
   padding: 1rem;
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .navbar-section {
@@ -20,4 +21,13 @@
   border: 2px solid white;
   width: 3rem;
   height: 3rem;
+}
+
+.navbar-title {
+  font-weight: var(--font-bold);
+  font-size: 1.125rem;
+}
+.navbar-pills {
+  font-weight: var(--font-semi-bold);
+  cursor: pointer;
 }

@@ -22,3 +22,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
 }
+
+.box-shadow{
+  box-shadow: var(--default-box-shadow);
+}
