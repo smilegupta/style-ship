@@ -1,27 +1,55 @@
 h1 {
-  font-size: calc(3 * var(--default-font-size));
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: calc(2.5 * var(--default-font-size));
+  font-size: 2.5rem;
 }
 
 h3 {
-  font-size: calc(2 * var(--default-font-size));
+  font-size: 2rem;
 }
 
 h4 {
-  font-size: calc(1.75 * var(--default-font-size));
+  font-size: 1.75rem;
 }
 
 h5 {
-  font-size: calc(1.5 * var(--default-font-size));
+  font-size: 1.5rem;
 }
 
 h6 {
-  font-size: calc(1.25 * var(--default-font-size));
+  font-size: 1.25rem;
 }
 
-p {
-  font-size: calc(4 * var(--default-font-size));
+.text-primary-color {
+  color: var(--primary-color);
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-capitalise {
+  text-transform: capitalize;
+}
+
+.text-cursor-pointer {
+  cursor: pointer;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-no-underline{
+  text-decoration: none;
 }

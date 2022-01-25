@@ -1,0 +1,11 @@
+.footer {
+  background-color: var(--primary-bg);
+  min-height: 5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-header {
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}

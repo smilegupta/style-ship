@@ -10,17 +10,14 @@
 @import "./margin.css";
 @import "./avatar.css";
 @import "./images.css";
+@import "./card.css";
+@import "./footer.css";
 
-body {
-  font-family: "Roboto", sans-serif;
-  margin: 0px;
-  padding: 0px;
+html {
   font-size: var(--default-font-size);
 }
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  width: 100%;
+body {
+  font-family: "Roboto", sans-serif;
 }
+
