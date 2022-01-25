@@ -12,6 +12,8 @@
 @import "./images.css";
 @import "./card.css";
 @import "./footer.css";
+@import "./navbar.css";
+@import "./buttons.css";
 
 html {
   font-size: var(--default-font-size);
@@ -20,4 +22,3 @@ html {
 body {
   font-family: "Roboto", sans-serif;
 }
-

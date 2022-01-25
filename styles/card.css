@@ -48,12 +48,6 @@
   justify-content: space-between;
 }
 
-.card-footer-button{
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
 .card-footer-buttons {
   flex-grow: 1;
   display: flex;

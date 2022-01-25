@@ -1,0 +1,23 @@
+.navbar {
+  min-height: 10vh;
+  width: 100%;
+  align-items: center;
+  background-color: #fcfcfc;
+  font-weight: 500;
+  color: #282c3f;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-brand-image {
+  border: 2px solid white;
+  width: 3rem;
+  height: 3rem;
+}
