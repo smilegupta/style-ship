@@ -15,3 +15,7 @@
   letter-spacing: 0.5px;
   font-weight: var(--font-semi-bold);
 }
+
+.footer-social-handles > a {
+  color: var(--black);
+}
