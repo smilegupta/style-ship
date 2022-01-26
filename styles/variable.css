@@ -3,6 +3,7 @@
   --default-font-size: 87.5%; /* 14px */
   --primary-color: #ca965c;
   --primary-bg: #ca965c1a;
+  --primary-color-hover: #ba8b56;
   --secondary-color: #876445;
   --secondary-bg: #8764451a;
   --background-color: #eec373;
@@ -15,6 +16,7 @@
   --danger-bg: #fa71781a;
   --success-color: #03c99b;
   --success-bg: #03c99b1a;
+  --text-color: #ffffff;
   --dark-grey: rgb(100, 100, 100);
   --grey: rgb(150, 150, 150);
   --grey-highlight: rgb(150, 150, 150, 0.2);
@@ -26,6 +28,7 @@
   --font-medium: 500;
   --font-semi-bold: 600;
   --font-bold: 700;
+  --button-border: 0.25rem;
   --white: #ffffff;
   --black: #000000;
 }

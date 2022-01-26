@@ -1,5 +1,31 @@
-.transparent-button {
+.btn {
+  text-decoration: none;
+  display: inline-block;
   background-color: transparent;
   border: none;
+  text-align: center;
+  outline: none;
   cursor: pointer;
+  border-radius: var(--button-border);
+  padding: 0.5rem 1rem;
+}
+
+.btn-solid-primary {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.btn-solid-primary:hover {
+  background-color: var(--primary-color-hover);
+}
+
+.btn-outline-primary {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  border: 1px solid var(--primary-color-hover);
+  background-color: var(--primary-color-hover);
+  color: var(--text-color);
 }

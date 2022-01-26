@@ -6,8 +6,8 @@
   align-items: center;
   background-color: #fcfcfc;
   font-weight: 500;
-  color: #282c3f;
-  padding: 1rem;
+  color: hsl(230, 22%, 20%);
+  padding: 1.5rem 2.5rem;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
@@ -29,6 +29,10 @@
 .navbar-pills {
   font-weight: var(--font-semi-bold);
   cursor: pointer;
+}
+
+.navbar-pills:hover {
+  color: var(--primary-color);
 }
 
 .navbar-icon {
