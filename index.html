@@ -17,57 +17,58 @@
       href="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-ship-ecommerce-kiranshastry-lineal-color-kiranshastry.png"
     />
     <link rel="stylesheet" href="./styles/main.css" />
+    <script src="./javascript/navbar.js" defer></script>
 
     <!-- Page Title-->
     <title>Style Ship | Home</title>
   </head>
   <body>
-    <h4>Avatar</h4>
-    <section class="container m-5 p-5">
-      <div class="avatar avatar-lg-size">
-        <img
-          src="https://cdn.pixabay.com/photo/2021/03/31/03/12/cat-6138366_1280.jpg"
-          alt="avatar"
-          class="img-responsive img-round"
-        />
+    <nav class="navbar box-shadow">
+      <div id="navbar-menu-desktop" class="navbar-section">
+        <div class="navbar-branding mr-3">Style Ship</div>
+        <div class="navbar-options">
+          <button class="transparent-button navbar-pills mx-2">Home</button>
+          <button class="transparent-button navbar-pills mx-2">
+            Documentation
+          </button>
+        </div>
       </div>
-      <div class="avatar avatar-md-size">
-        <img
-          src="https://cdn.pixabay.com/photo/2021/03/31/03/12/cat-6138366_1280.jpg"
-          alt="avatar"
-          class="img-responsive img-round"
-        />
+      <div id="navbar-menu-mobile" class="navbar-section">
+        <button class="transparent-button" onclick="openNav()">
+          <i class="fas fa-bars navbar-icon text-primary-color"></i>
+        </button>
+        <div id="toggle-sidebar" class="navbar-sidebar box-shadow">
+          <div class="sidebar-header p-4">
+            <span class="sidebar-header-title"> Style Ship </span>
+            <button onclick="closeNav()" class="transparent-button sidebar-header-title">X</button>
+          </div>
+          <ul class="sidebar-menu">
+            <li class="p-4"> Home </li>
+            <li class="p-4"> Documentation </li>
+          </div>
+        </div>
       </div>
-      <div class="avatar avatar-sm-size">
-        <img
-          src="https://cdn.pixabay.com/photo/2021/03/31/03/12/cat-6138366_1280.jpg"
-          alt="avatar"
-          class="img-responsive img-round"
-        />
+      <div class="navbar-section">
+        <button
+          class="transparent-button navbar-pills ml-2 navbar-icon"
+          id="theme-toggle"
+        >
+          <i class="fas fa-moon"></i>
+        </button>
       </div>
-      <div class="avatar avatar-xs-size">
-        <img
-          src="https://cdn.pixabay.com/photo/2021/03/31/03/12/cat-6138366_1280.jpg"
-          alt="avatar"
-          class="img-responsive img-round"
-        />
-      </div>
-    </section>
+    </nav>
     <footer class="footer text-center">
-      <div class="footer-header">
-        Made with <span class="primary-text-color">&lt;/&gt;</span> by Smile
-        Gupta
+      <div class="footer-header mb-2">
+        Made with <span class="text-primary-color">&#9829;</span> by Smile Gupta
       </div>
-      <div>
-        <a class="text-no-underline" href="https://github.com/smilegupta"
+      <div class="footer-social-handles">
+        <a href="https://github.com/smilegupta" target="_blank"
           ><i class="fab fa-github"></i
         ></a>
-        <a class="text-no-underline" href="https://twitter.com/smileguptaaa"
+        <a href="https://twitter.com/smileguptaaa" target="_blank"
           ><i class="fab fa-twitter"></i
         ></a>
-        <a
-          class="text-no-underline"
-          href="https://www.linkedin.com/in/smilegupta"
+        <a href="https://www.linkedin.com/in/smilegupta" target="_blank"
           ><i class="fab fa-linkedin-in"></i
         ></a>
       </div>
