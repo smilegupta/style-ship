@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../styles/project-styles.css" />
   <link rel="stylesheet" href="../styles/code-copy-component.css" />
   <script src="../javascript/navbar.js" defer></script>
+  <script src="../javascript/copy-content.js" defer></script>
 
   <!-- Page Title-->
   <title>Style Ship | Installation</title>
@@ -66,11 +67,23 @@
         <p class="mb-2 promotional-content-text"> 
           Copy and paste the following code in the head tag of your html document. So that you can style your components by just adding class names to your html elements.
         </p>
-        
-        
-        <div class="action-buttons"> 
-          <button class="btn btn-solid-primary">Documentation</button>
+        <div class="container">
+          <p class="language" id="language-copy">HTML</p>
+          <div class="code-wrapper">
+            <pre>
+                    <code id="code" data-lang="html">
+// CSS File
+<link rel="stylesheet" href="https://style-ship.netlify.app/styles/main.css" />
+                      
+// JS File
+<script src="https://style-ship.netlify.app/javascript/navbar.js" defer></script></code>
+                </pre>
+            <button id="copy-button">Copy</button>
+          </div>
+          <span id="copy-success">Code copied! :)</span>
         </div>
+        
+        
       </div>
       <div class="image-wrapper m-5">
         <img src="../assets/home_page_infographic.svg" class="img-responsive m-5" />
@@ -87,6 +100,7 @@
       <a href="https://www.linkedin.com/in/smilegupta" target="_blank"><i class="fab fa-linkedin-in"></i></a>
     </div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
 </body>
 
 </html>
