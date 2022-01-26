@@ -1,3 +1,5 @@
+@import "https://fonts.googleapis.com/css2?family=Marck+Script&display=swap";
+
 .navbar {
   min-height: 10vh;
   width: 100%;
@@ -17,17 +19,67 @@
   align-items: center;
 }
 
-.navbar-brand-image {
-  border: 2px solid white;
-  width: 3rem;
-  height: 3rem;
+.navbar-branding {
+  font-weight: var(--font-bold);
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  font-family: "Marck Script", cursive;
 }
 
-.navbar-title {
-  font-weight: var(--font-bold);
-  font-size: 1.125rem;
-}
 .navbar-pills {
   font-weight: var(--font-semi-bold);
   cursor: pointer;
+}
+
+.navbar-icon {
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+}
+
+#navbar-menu-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  #navbar-menu-mobile {
+    display: block;
+  }
+
+  #navbar-menu-desktop {
+    display: none;
+  }
+}
+
+.navbar-sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--white);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-bg);
+}
+
+.sidebar-header-title {
+  font-weight: var(--font-bold);
+  font-size: 2rem;
+  color: var(--primary-color);
+  font-family: "Marck Script", cursive;
+}
+
+.sidebar-menu > li {
+  cursor: pointer;
+}
+
+.sidebar-menu > li:hover {
+  background-color: var(--primary-bg);
 }
