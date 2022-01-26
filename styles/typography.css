@@ -58,3 +58,12 @@ p {
 .text-no-underline {
   text-decoration: none;
 }
+
+.link-no-style {
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}

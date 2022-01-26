@@ -35,6 +35,11 @@
   color: var(--primary-color);
 }
 
+.navbar-pills-active {
+  color: var(--primary-color);
+  font-weight: var(--font-bold);
+}
+
 .navbar-icon {
   color: var(--secondary-color);
   font-size: 1.2rem;
@@ -44,15 +49,6 @@
   display: none;
 }
 
-@media screen and (max-width: 1024px) {
-  #navbar-menu-mobile {
-    display: block;
-  }
-
-  #navbar-menu-desktop {
-    display: none;
-  }
-}
 
 .navbar-sidebar {
   height: 100%;
@@ -80,10 +76,20 @@
   font-family: "Marck Script", cursive;
 }
 
-.sidebar-menu > li {
-  cursor: pointer;
+.sidebar-menu-items:hover {
+  background-color: var(--primary-bg);
 }
 
-.sidebar-menu > li:hover {
-  background-color: var(--primary-bg);
+@media screen and (max-width: 1024px) {
+  .navbar{
+    padding: 1rem;
+  }
+
+  #navbar-menu-mobile {
+    display: block;
+  }
+
+  #navbar-menu-desktop {
+    display: none;
+  }
 }

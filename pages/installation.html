@@ -12,12 +12,13 @@
   <!-- External Imports -->
   <link rel="icon"
     href="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-ship-ecommerce-kiranshastry-lineal-color-kiranshastry.png" />
-  <link rel="stylesheet" href="./styles/main.css" />
-  <link rel="stylesheet" href="./styles/project-styles.css" />
-  <script src="./javascript/navbar.js" defer></script>
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/project-styles.css" />
+  <link rel="stylesheet" href="../styles/code-copy-component.css" />
+  <script src="../javascript/navbar.js" defer></script>
 
   <!-- Page Title-->
-  <title>Style Ship | Home</title>
+  <title>Style Ship | Installation</title>
 </head>
 
 <body>
@@ -25,14 +26,14 @@
     <div id="navbar-menu-desktop" class="navbar-section">
       <div class="navbar-branding mr-3">Style Ship</div>
       <div class="navbar-options">
+        <button class="btn navbar-pills mx-2">
+          <a href="../index.html" class="link-no-style"> Home </a>
+        </button>
         <button class="btn navbar-pills mx-2 navbar-pills-active">
-          <a href="./" class="link-no-style"> Home </a>
+          <a href="./installation.html" class="link-no-style"> Installation </a>
         </button>
         <button class="btn navbar-pills mx-2">
-          <a href="./pages/installation.html" class="link-no-style"> Installation </a>
-        </button>
-        <button class="btn navbar-pills mx-2">
-          <a href="./pages/documentation.html" class="link-no-style"> Documentation </a>
+          <a href="./documentation.html" class="link-no-style"> Documentation </a>
         </button>
       </div>
     </div>
@@ -46,9 +47,9 @@
           <button onclick="closeNav()" class="btn sidebar-header-title">X</button>
         </div>
         <ul class="sidebar-menu">
-          <li class="p-4 sidebar-menu-items">  <a href="./" class="link-no-style"> Home </a> </li>
-          <li class="p-4 sidebar-menu-items">  <a href="./pages/installation.html" class="link-no-style"> Installation </a> </li>
-          <li class="p-4 sidebar-menu-items">  <a href="./pages/documentation.html" class="link-no-style"> Documentation </a> </li>
+          <li class="p-4 sidebar-menu-items">  <a href="../index.html" class="link-no-style"> Home </a> </li>
+          <li class="p-4 sidebar-menu-items">  <a href="./installation.html" class="link-no-style"> Installation </a> </li>
+          <li class="p-4 sidebar-menu-items">  <a href="./documentation.html" class="link-no-style"> Documentation </a> </li>
       </div>
     </div>
     </div>
@@ -61,19 +62,18 @@
   <main>
     <section class="grid-50-50-layout promotional-content-wrapper">
       <div class="promotional-content mr-4">
-        <h3 class="mb-2 text-primary-color promotional-content-heading">Build Your UI Faster</h3>
-        <p class="mb-2 promotional-content-text"> Copy and paste the components at one click. It is user-friendly and customizable.
-            Spend less time in designing and concentrate more on logic without hustling on UI.
+        <h3 class="mb-2 text-primary-color promotional-content-heading">Installation</h3>
+        <p class="mb-2 promotional-content-text"> 
+          Copy and paste the following code in the head tag of your html document. So that you can style your components by just adding class names to your html elements.
         </p>
+        
+        
         <div class="action-buttons"> 
-          <button class="btn btn-outline-primary"><a href="./pages/installation.html" class="link-no-style"> Installation </a></button>
-          <button class="btn btn-solid-primary">
-            <a href="./pages/installation.html" class="link-no-style"> Documentation </a>
-          </button>
+          <button class="btn btn-solid-primary">Documentation</button>
         </div>
       </div>
       <div class="image-wrapper m-5">
-        <img src="assets/home_page_infographic.svg" class="img-responsive m-5" />
+        <img src="../assets/home_page_infographic.svg" class="img-responsive m-5" />
       </div>
     </section>
   </main>
