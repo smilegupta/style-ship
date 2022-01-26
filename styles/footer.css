@@ -2,11 +2,11 @@
   background-color: var(--primary-bg);
   min-height: 5rem;
   width: 100%;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .footer-header {

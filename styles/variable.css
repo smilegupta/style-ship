@@ -1,8 +1,12 @@
 :root {
   /* 1rem = 16px */
   --default-font-size: 87.5%; /* 14px */
-  --primary-color: #5851d8;
-  --primary-bg: #5851d81a;
+  --primary-color: #ca965c;
+  --primary-bg: #ca965c1a;
+  --secondary-color: #876445;
+  --secondary-bg: #8764451a;
+  --background-color: #eec373;
+  --card-background: #f4dfba;
   --info-color: #5dc4eb;
   --info-bg: #5dc4eb1a;
   --warning-color: #ffc95c;
@@ -11,10 +15,6 @@
   --danger-bg: #fa71781a;
   --success-color: #03c99b;
   --success-bg: #03c99b1a;
-  --background-color: #f9fbff;
-  --form-items-border: #e3e3e3;
-  --card-background: #ffffff;
-  --violet: #0f104b;
   --dark-grey: rgb(100, 100, 100);
   --grey: rgb(150, 150, 150);
   --grey-highlight: rgb(150, 150, 150, 0.2);
