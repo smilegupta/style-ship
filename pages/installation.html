@@ -1,106 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Smile Gupta" />
+    <meta name="description" content="Style Ship is a UI Component Library built with an aim to ship UI faster" />
 
-<head>
-  <!-- Meta Information -->
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Smile Gupta" />
-  <meta name="description" content="Style Ship is a UI Component Library built with an aim to ship UI faster" />
+    <!-- External Imports -->
+    <link rel="icon"
+      href="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-ship-ecommerce-kiranshastry-lineal-color-kiranshastry.png" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/style-ship-styles.css" />
+    <script src="../javascript/navbar.js" defer></script>
 
-  <!-- External Imports -->
-  <link rel="icon"
-    href="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-ship-ecommerce-kiranshastry-lineal-color-kiranshastry.png" />
-  <link rel="stylesheet" href="../styles/main.css" />
-  <link rel="stylesheet" href="../styles/project-styles.css" />
-  <link rel="stylesheet" href="../styles/code-copy-component.css" />
-  <script src="../javascript/navbar.js" defer></script>
-  <script src="../javascript/copy-content.js" defer></script>
-
-  <!-- Page Title-->
-  <title>Style Ship | Installation</title>
-</head>
-
-<body>
-  <nav class="navbar box-shadow">
-    <div id="navbar-menu-desktop" class="navbar-section">
-      <div class="navbar-branding mr-3">Style Ship</div>
-      <div class="navbar-options">
-        <button class="btn navbar-pills mx-2">
-          <a href="../index.html" class="link-no-style"> Home </a>
-        </button>
-        <button class="btn navbar-pills mx-2 navbar-pills-active">
-          <a href="./installation.html" class="link-no-style"> Installation </a>
-        </button>
-        <button class="btn navbar-pills mx-2">
-          <a href="./documentation.html" class="link-no-style"> Documentation </a>
-        </button>
-      </div>
-    </div>
-    <div id="navbar-menu-mobile" class="navbar-section">
-      <button class="btn" onclick="openNav()">
-        <i class="fas fa-bars navbar-icon text-primary-color"></i>
-      </button>
-      <div id="toggle-sidebar" class="navbar-sidebar box-shadow">
-        <div class="sidebar-header p-4">
-          <span class="sidebar-header-title"> Style Ship </span>
-          <button onclick="closeNav()" class="btn sidebar-header-title">X</button>
+    <!-- Page Title-->
+    <title>Style Ship | Installation</title>
+  </head>
+  <body>
+    <nav class="navbar box-shadow">
+      <div id="navbar-menu-desktop" class="navbar-section">
+        <div class="navbar-branding mr-3">Style Ship</div>
+        <div class="navbar-options">
+          <button class="btn navbar-pills mx-2">
+            <a href="../index.html" class="link-no-style"> Home </a>
+          </button>
+          <button class="btn navbar-pills mx-2 navbar-pills-active">
+            <a href="./installation.html" class="link-no-style"> Installation </a>
+          </button>
+          <button class="btn navbar-pills mx-2">
+            <a href="./documentation.html" class="link-no-style"> Documentation </a>
+          </button>
         </div>
-        <ul class="sidebar-menu">
-          <li class="p-4 sidebar-menu-items">  <a href="../index.html" class="link-no-style"> Home </a> </li>
-          <li class="p-4 sidebar-menu-items">  <a href="./installation.html" class="link-no-style"> Installation </a> </li>
-          <li class="p-4 sidebar-menu-items">  <a href="./documentation.html" class="link-no-style"> Documentation </a> </li>
       </div>
-    </div>
-    </div>
-    <div class="navbar-section">
-      <button class="btn navbar-pills ml-2 navbar-icon" id="theme-toggle">
-        <i class="fas fa-moon"></i>
-      </button>
-    </div>
-  </nav>
-  <main>
-    <section class="grid-50-50-layout promotional-content-wrapper">
-      <div class="promotional-content mr-4">
-        <h3 class="mb-2 text-primary-color promotional-content-heading">Installation</h3>
-        <p class="mb-2 promotional-content-text"> 
-          Copy and paste the following code in the head tag of your html document. So that you can style your components by just adding class names to your html elements.
-        </p>
-        <div class="container">
-          <p class="language" id="language-copy">HTML</p>
-          <div class="code-wrapper">
-            <pre>
-                    <code id="code" data-lang="html">
-// CSS File
-<link rel="stylesheet" href="https://style-ship.netlify.app/styles/main.css" />
-                      
-// JS File
-<script src="https://style-ship.netlify.app/javascript/navbar.js" defer></script></code>
-                </pre>
-            <button id="copy-button">Copy</button>
+      <div id="navbar-menu-mobile" class="navbar-section">
+        <button class="btn" onclick="openNav()">
+          <i class="fas fa-bars navbar-icon text-primary-color"></i>
+        </button>
+        <div id="toggle-sidebar" class="navbar-sidebar box-shadow">
+          <div class="sidebar-header p-4">
+            <span class="sidebar-header-title"> Style Ship </span>
+            <button onclick="closeNav()" class="btn sidebar-header-title">X</button>
           </div>
-          <span id="copy-success">Code copied! :)</span>
+          <ul class="sidebar-menu">
+            <li class="p-4 sidebar-menu-items">  <a href="../index.html" class="link-no-style"> Home </a> </li>
+            <li class="p-4 sidebar-menu-items">  <a href="./installation.html" class="link-no-style"> Installation </a> </li>
+            <li class="p-4 sidebar-menu-items">  <a href="./documentation.html" class="link-no-style"> Documentation </a> </li>
         </div>
-        
-        
       </div>
-      <div class="image-wrapper m-5">
-        <img src="../assets/home_page_infographic.svg" class="img-responsive m-5" />
       </div>
-    </section>
-  </main>
-  <footer class="footer text-center">
-    <div class="footer-header mb-2">
-      Made with <span class="text-primary-color">&#9829;</span> by Smile Gupta
-    </div>
-    <div class="footer-social-handles">
-      <a href="https://github.com/smilegupta" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://twitter.com/smileguptaaa" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.linkedin.com/in/smilegupta" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-    </div>
-  </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-</body>
-
+      <div class="navbar-section">
+        <button class="btn navbar-pills ml-2 navbar-icon" id="theme-toggle">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </nav>
+    <main>
+      <section class="grid-50-50-layout promotional-content-wrapper">
+        <div class="promotional-content mr-4">
+          <h3 class="mb-2 text-primary-color promotional-content-heading">Installation</h3>
+          <p class="mb-2 promotional-content-text"> 
+            Copy and paste the following code in the head tag of your html document. So that you can style your components by just adding class names to your html elements.
+          </p>
+          <div class="code-wrapper">
+            <div class="code-snippet-display" style="border: 1px solid var(--primary-color);">
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=auto&width=500&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520For%2520Version%25201%2520--%253E%250A%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fstyle-ship.netlify.app%252Fstyles%252Fmain.css%2522%253E%250A"
+                  style="border:0; transform: scale(1); overflow:hidden;"
+                  sandbox="allow-scripts allow-same-origin">
+                </iframe>
+              </code>
+            </div>
+          </div>  
+        </div>
+        <div class="image-wrapper m-5">
+          <img src="../assets/installation_page_infographic.svg" class="img-responsive m-5" />
+        </div>
+      </section>
+    </main>
+    <footer class="footer text-center">
+      <div class="footer-header mb-2">
+        Made with <span class="text-primary-color">&#9829;</span> by Smile Gupta
+      </div>
+      <div class="footer-social-handles">
+        <a href="https://github.com/smilegupta" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/smileguptaaa" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/smilegupta" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </footer>
+  </body>
 </html>

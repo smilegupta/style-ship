@@ -1,92 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Smile Gupta" />
+    <meta name="description" content="Style Ship is a UI Component Library built with an aim to ship UI faster" />
 
-<head>
-  <!-- Meta Information -->
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Smile Gupta" />
-  <meta name="description" content="Style Ship is a UI Component Library built with an aim to ship UI faster" />
+    <!-- External Imports -->
+    <link rel="icon"
+      href="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-ship-ecommerce-kiranshastry-lineal-color-kiranshastry.png" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/style-ship-styles.css" />
+    <script src="./javascript/navbar.js" defer></script>
 
-  <!-- External Imports -->
-  <link rel="icon"
-    href="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-ship-ecommerce-kiranshastry-lineal-color-kiranshastry.png" />
-  <link rel="stylesheet" href="./styles/main.css" />
-  <link rel="stylesheet" href="./styles/project-styles.css" />
-  <script src="./javascript/navbar.js" defer></script>
-
-  <!-- Page Title-->
-  <title>Style Ship | Home</title>
-</head>
-
-<body>
-  <nav class="navbar box-shadow">
-    <div id="navbar-menu-desktop" class="navbar-section">
-      <div class="navbar-branding mr-3">Style Ship</div>
-      <div class="navbar-options">
-        <button class="btn navbar-pills mx-2 navbar-pills-active">
-          <a href="./" class="link-no-style"> Home </a>
-        </button>
-        <button class="btn navbar-pills mx-2">
-          <a href="./pages/installation.html" class="link-no-style"> Installation </a>
-        </button>
-        <button class="btn navbar-pills mx-2">
-          <a href="./pages/documentation.html" class="link-no-style"> Documentation </a>
-        </button>
-      </div>
-    </div>
-    <div id="navbar-menu-mobile" class="navbar-section">
-      <button class="btn" onclick="openNav()">
-        <i class="fas fa-bars navbar-icon text-primary-color"></i>
-      </button>
-      <div id="toggle-sidebar" class="navbar-sidebar box-shadow">
-        <div class="sidebar-header p-4">
-          <span class="sidebar-header-title"> Style Ship </span>
-          <button onclick="closeNav()" class="btn sidebar-header-title">X</button>
-        </div>
-        <ul class="sidebar-menu">
-          <li class="p-4 sidebar-menu-items">  <a href="./" class="link-no-style"> Home </a> </li>
-          <li class="p-4 sidebar-menu-items">  <a href="./pages/installation.html" class="link-no-style"> Installation </a> </li>
-          <li class="p-4 sidebar-menu-items">  <a href="./pages/documentation.html" class="link-no-style"> Documentation </a> </li>
-      </div>
-    </div>
-    </div>
-    <div class="navbar-section">
-      <button class="btn navbar-pills ml-2 navbar-icon" id="theme-toggle">
-        <i class="fas fa-moon"></i>
-      </button>
-    </div>
-  </nav>
-  <main>
-    <section class="grid-50-50-layout promotional-content-wrapper">
-      <div class="promotional-content mr-4">
-        <h3 class="mb-2 text-primary-color promotional-content-heading">Build Your UI Faster</h3>
-        <p class="mb-2 promotional-content-text"> Copy and paste the components at one click. It is user-friendly and customizable.
-            Spend less time in designing and concentrate more on logic without hustling on UI.
-        </p>
-        <div class="action-buttons"> 
-          <button class="btn btn-outline-primary"><a href="./pages/installation.html" class="link-no-style"> Installation </a></button>
-          <button class="btn btn-solid-primary">
-            <a href="./pages/installation.html" class="link-no-style"> Documentation </a>
+    <!-- Page Title-->
+    <title>Style Ship | Home</title>
+  </head>
+  <body>
+    <nav class="navbar box-shadow">
+      <div id="navbar-menu-desktop" class="navbar-section">
+        <div class="navbar-branding mr-3">Style Ship</div>
+        <div class="navbar-options">
+          <button class="btn navbar-pills mx-2 navbar-pills-active">
+            <a href="./" class="link-no-style"> Home </a>
+          </button>
+          <button class="btn navbar-pills mx-2">
+            <a href="./pages/installation.html" class="link-no-style"> Installation </a>
+          </button>
+          <button class="btn navbar-pills mx-2">
+            <a href="./pages/documentation.html" class="link-no-style"> Documentation </a>
           </button>
         </div>
       </div>
-      <div class="image-wrapper m-5">
-        <img src="assets/home_page_infographic.svg" class="img-responsive m-5" />
+      <div id="navbar-menu-mobile" class="navbar-section">
+        <button class="btn" onclick="openNav()">
+          <i class="fas fa-bars navbar-icon text-primary-color"></i>
+        </button>
+        <div id="toggle-sidebar" class="navbar-sidebar box-shadow">
+          <div class="sidebar-header p-4">
+            <span class="sidebar-header-title"> Style Ship </span>
+            <button onclick="closeNav()" class="btn sidebar-header-title">X</button>
+          </div>
+          <ul class="sidebar-menu">
+            <li class="p-4 sidebar-menu-items">  <a href="./" class="link-no-style"> Home </a> </li>
+            <li class="p-4 sidebar-menu-items">  <a href="./pages/installation.html" class="link-no-style"> Installation </a> </li>
+            <li class="p-4 sidebar-menu-items">  <a href="./pages/documentation.html" class="link-no-style"> Documentation </a> </li>
+        </div>
       </div>
-    </section>
-  </main>
-  <footer class="footer text-center">
-    <div class="footer-header mb-2">
-      Made with <span class="text-primary-color">&#9829;</span> by Smile Gupta
-    </div>
-    <div class="footer-social-handles">
-      <a href="https://github.com/smilegupta" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://twitter.com/smileguptaaa" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.linkedin.com/in/smilegupta" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-    </div>
-  </footer>
-</body>
-
+      </div>
+      <div class="navbar-section">
+        <button class="btn navbar-pills ml-2 navbar-icon" id="theme-toggle">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </nav>
+    <main>
+      <section class="grid-50-50-layout promotional-content-wrapper">
+        <div class="promotional-content mr-4">
+          <h3 class="mb-2 text-primary-color promotional-content-heading">Build Your UI Faster</h3>
+          <p class="mb-2 promotional-content-text"> Copy and paste the components at one click. It is user-friendly and customizable.
+              Spend less time in designing and concentrate more on logic without hustling on UI.
+          </p>
+          <div class="action-buttons"> 
+            <button class="btn btn-outline-primary mb-2"><a href="./pages/installation.html" class="link-no-style"> Installation </a></button>
+            <button class="btn btn-solid-primary mb-2">
+              <a href="./pages/documentation.html" class="link-no-style"> Documentation </a>
+            </button>
+          </div>
+        </div>
+        <div class="image-wrapper m-5">
+          <img src="assets/home_page_infographic.svg" class="img-responsive m-5" />
+        </div>
+      </section>
+    </main>
+    <footer class="footer text-center">
+      <div class="footer-header mb-2">
+        Made with <span class="text-primary-color">&#9829;</span> by Smile Gupta
+      </div>
+      <div class="footer-social-handles">
+        <a href="https://github.com/smilegupta" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/smileguptaaa" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/smilegupta" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </footer>
+  </body>
 </html>
