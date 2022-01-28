@@ -6,8 +6,8 @@
   align-items: center;
   background-color: #fcfcfc;
   font-weight: 500;
-  color: #282c3f;
-  padding: 1rem;
+  color: hsl(230, 22%, 20%);
+  padding: 1.5rem 2.5rem;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
@@ -31,6 +31,15 @@
   cursor: pointer;
 }
 
+.navbar-pills:hover {
+  color: var(--primary-color);
+}
+
+.navbar-pills-active {
+  color: var(--primary-color);
+  font-weight: var(--font-bold);
+}
+
 .navbar-icon {
   color: var(--secondary-color);
   font-size: 1.2rem;
@@ -40,15 +49,6 @@
   display: none;
 }
 
-@media screen and (max-width: 1024px) {
-  #navbar-menu-mobile {
-    display: block;
-  }
-
-  #navbar-menu-desktop {
-    display: none;
-  }
-}
 
 .navbar-sidebar {
   height: 100%;
@@ -76,10 +76,20 @@
   font-family: "Marck Script", cursive;
 }
 
-.sidebar-menu > li {
-  cursor: pointer;
+.sidebar-menu-items:hover {
+  background-color: var(--primary-bg);
 }
 
-.sidebar-menu > li:hover {
-  background-color: var(--primary-bg);
+@media screen and (max-width: 1024px) {
+  .navbar{
+    padding: 1rem;
+  }
+
+  #navbar-menu-mobile {
+    display: block;
+  }
+
+  #navbar-menu-desktop {
+    display: none;
+  }
 }

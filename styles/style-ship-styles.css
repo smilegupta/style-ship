@@ -1,0 +1,74 @@
+/*************** Style Ship Styles ***************/
+
+.promotional-content-wrapper {
+  padding: 2rem 2.5rem;
+}
+
+.promotional-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.promotional-content-text {
+  font-size: 1.75rem;
+  line-height: 2rem;
+}
+
+.image-wrapper {
+  box-sizing: border-box;
+}
+
+.code-snippet-display {
+  box-sizing: border-box;
+  width: 100%;
+  max-height: 300px;
+  padding: 1rem 0;
+  background-color: #fafafa;
+  margin: 2rem 0;
+  overflow: auto;
+}
+.code-snippet-display iframe {
+  width: 100%;
+  border: none;
+}
+
+.code-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/*************** Media Queries for Small Screens ***************/
+
+@media screen and (max-width: 1024px) {
+  .promotional-content {
+    align-items: center;
+    margin-top: calc(5 * var(--margin));
+  }
+
+  .promotional-content-heading {
+    font-size: 1.5rem;
+    margin-bottom: calc(5 * var(--margin));
+  }
+
+  .promotional-content-text {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    text-align: center;
+    margin-bottom: calc(5 * var(--margin));
+  }
+
+  .action-buttons {
+    margin-bottom: calc(5 * var(--margin));
+  }
+}
+
+/*************** Media Queries for Mobiles ***************/
+
+@media screen and (max-width: 480px) {
+  .image-wrapper {
+    display: none;
+  }
+}
