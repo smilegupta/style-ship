@@ -1,9 +1,11 @@
-const sidebar = document.getElementById("toggle-sidebar");
+document.addEventListener("DOMContentLoaded", () => {
+  const sidebar = document.getElementById("toggle-sidebar");
 
-function openNav() {
-  sidebar.style.width = "250px";
-}
+  function openNav() {
+    sidebar.style.width = "250px";
+  }
 
-function closeNav() {
-  sidebar.style.width = "0";
-}
+  function closeNav() {
+    sidebar.style.width = "0";
+  }
+});
