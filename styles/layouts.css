@@ -1,3 +1,8 @@
+.grid-20-80-layout {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
 .grid-30-70-layout {
   display: grid;
   grid-template-columns: 30% 70%;
@@ -24,9 +29,6 @@
   max-width: 56.5rem;
   margin: 0 auto;
 }
-.grid-content-center {
-  justify-content: center;
-}
 
 @media screen and (max-width: 768px) {
   .grid-4-column-layout {
@@ -38,7 +40,7 @@
   .grid-30-70-layout {
     grid-template-columns: 1fr;
   }
-  
+
   .grid-70-30-layout {
     grid-template-columns: 1fr;
   }
@@ -48,6 +50,10 @@
   }
 
   .grid-60-40-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-20-80-layout {
     grid-template-columns: 1fr;
   }
 }

@@ -1,0 +1,40 @@
+.sidebar {
+  position: sticky;
+  top: 0rem;
+  height: 100%;
+  box-shadow: 0 4px 12px 0 rgb(0 0 0 / 5%);
+}
+
+.sidebar-header {
+  padding: 2rem 2.5rem 0rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar-title {
+  font-size: 1.5rem;
+}
+
+.sidebar-arrow {
+  font-size: 1.125rem;
+  /* display: none; */
+}
+
+.sidebar-items {
+  padding: 1rem 2.5rem 1rem 2rem;
+}
+
+.sidebar-items > li {
+  padding: 1rem 0rem;
+  font-size: 1.125rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .sidebar-header {
+    padding: 1rem 2rem;
+  }
+
+  .sidebar-arrow {
+    display: block;
+  }
+}
