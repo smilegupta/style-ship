@@ -1,8 +1,3 @@
-.grid-20-80-layout {
-  display: grid;
-  grid-template-columns: 20% 80%;
-}
-
 .grid-30-70-layout {
   display: grid;
   grid-template-columns: 30% 70%;
@@ -28,12 +23,6 @@
   width: 100%;
   max-width: 56.5rem;
   margin: 0 auto;
-}
-
-@media screen and (max-width: 1024px) {
-  .grid-20-80-layout {
-    grid-template-columns: 1fr;
-  }
 }
 
 @media screen and (max-width: 768px) {

@@ -1,4 +1,4 @@
-/*************** Style Ship Styles ***************/
+/*************** Style Ship General Styles ***************/
 
 .promotional-content-wrapper {
   padding: 2rem 2.5rem;
@@ -40,6 +40,13 @@
   align-items: center;
 }
 
+/*************** Style Ship Doc Site Styles ***************/
+
+.doc-site-page-layout{
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
 /*************** Media Queries for Small Screens ***************/
 
 @media screen and (max-width: 1024px) {
@@ -63,7 +70,13 @@
   .action-buttons {
     margin-bottom: calc(5 * var(--margin));
   }
+
+  .doc-site-page-layout {
+    grid-template-columns: 1fr;
+  }
 }
+
+
 
 /*************** Media Queries for Mobiles ***************/
 
