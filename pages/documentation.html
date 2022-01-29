@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../styles/main.css" />
     <link rel="stylesheet" href="../styles/style-ship-styles.css" />
     <script src="../javascript/navbar.js" defer></script>
+    <script src="../javascript/sidebar.js" defer></script>
 
     <!-- Page Title-->
     <title>Style Ship | Documentation</title>
@@ -21,7 +22,11 @@
   <body>
     <nav class="navbar box-shadow">
       <div id="navbar-menu-desktop" class="navbar-section">
-        <div class="navbar-branding mr-3">Style Ship</div>
+        <div class="navbar-branding mr-3">
+          <a class="link-no-style" href="../index.html"> 
+            Style Ship
+          </a>
+        </div>
         <div class="navbar-options">
           <button class="btn navbar-pills mx-2">
             <a href="../index.html" class="link-no-style"> Home </a>
@@ -38,15 +43,15 @@
         <button class="btn" onclick="openNav()">
           <i class="fas fa-bars navbar-icon text-primary-color"></i>
         </button>
-        <div id="toggle-sidebar" class="navbar-sidebar box-shadow">
-          <div class="sidebar-header p-4">
-            <span class="sidebar-header-title"> Style Ship </span>
-            <button onclick="closeNav()" class="btn sidebar-header-title">X</button>
+        <div id="toggle-navbar-sidedrawer" class="navbar-side-drawer box-shadow">
+          <div class="navbar-side-drawer-header p-4">
+            <span class="navbar-side-drawer-header-title"> Style Ship </span>
+            <button onclick="closeNav()" class="btn navbar-side-drawer-header-title">X</button>
           </div>
           <ul class="sidebar-menu">
-            <li class="p-4 sidebar-menu-items">  <a href="../index.html" class="link-no-style"> Home </a> </li>
-            <li class="p-4 sidebar-menu-items">  <a href="./installation.html" class="link-no-style"> Installation </a> </li>
-            <li class="p-4 sidebar-menu-items">  <a href="./documentation.html" class="link-no-style"> Documentation </a> </li>
+            <li class="p-4 navbar-side-drawer-menu-items">  <a href="../index.html" class="link-no-style"> Home </a> </li>
+            <li class="p-4 navbar-side-drawer-menu-items">  <a href="./installation.html" class="link-no-style"> Installation </a> </li>
+            <li class="p-4 navbar-side-drawer-menu-items">  <a href="./documentation.html" class="link-no-style"> Documentation </a> </li>
         </div>
       </div>
       </div>
@@ -56,7 +61,68 @@
         </button>
       </div>
     </nav>
-  <img src="https://cdn.pixabay.com/photo/2019/12/27/08/36/coming-soon-hour-glass-4721933_1280.png" class="img-responsive img-square" />
+    <section class="doc-site-page-layout">
+      <div class="sidebar" id="sidebar-toggle">
+        <div class="sidebar-header mb-2" id="sidebar-header-wrapper">
+          <span class="sidebar-title">Components</span>
+          <span class="sidebar-arrow"> 
+            <i class="fas fa-chevron-down cursor-pointer"></i>
+          </span>
+        </div>
+        <ul class="sidebar-items-wrapper">
+          <li class="list-non-bullet sidebar-item">
+            <a class="link-no-style" href="#Alerts">Alerts</a>
+          </li>
+          <li class="list-non-bullet sidebar-item">
+            <a class="link-no-style" href="#Avatar">Avatar</a>
+          </li>
+          <li class="list-non-bullet sidebar-item">
+            <a class="link-no-style" href="#Badge">Badge</a>
+          </li>
+          <li class="list-non-bullet sidebar-item">
+            <a class="link-no-style" href="#Button">Button</a>
+          </li>
+          <li class="list-non-bullet sidebar-item">
+            <a class="link-no-style" href="#Cards">Cards</a>
+          </li>
+          <li class="list-non-bullet sidebar-item">
+            <a class="link-no-style" href="#Form">Form</a>
+          </li>
+          <li class="list-non-bullet sidebar-item">
+            <a class="link-no-style" href="#Image">Image</a>
+          </li>
+          <li class="list-non-bullet sidebar-item">
+            <a class="link-no-style" href="#Lists">Lists</a>
+          </li>
+          <li class="list-non-bullet sidebar-item">
+            <a class="link-no-style" href="#Modal">Modal</a>
+          </li>
+          <li class="list-non-bullet sidebar-item">
+            <a class="link-no-style" href="#Navigation">Navigation</a>
+          </li>
+          <li class="list-non-bullet sidebar-item">
+            <a class="link-no-style" href="#Rating">Rating</a>
+          </li>
+          <li class="list-non-bullet sidebar-item">
+            <a class="link-no-style" href="#Slider">Slider</a>
+          </li>
+          <li class="list-non-bullet sidebar-item">
+            <a class="link-no-style" href="#Grid">Grid Simplified</a>
+          </li>
+          <li class="list-non-bullet sidebar-item">
+            <a class="link-no-style" href="#Typography">Typography</a>
+          </li>
+          <li class="list-non-bullet sidebar-item">
+            <a class="link-no-style" href="#Toast">Toast</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-content">
+        Here will come the Main content
+      </div>
+
+    </section>
+  <!-- <img src="https://cdn.pixabay.com/photo/2019/12/27/08/36/coming-soon-hour-glass-4721933_1280.png" class="img-responsive img-square" /> -->
     <footer class="footer text-center">
       <div class="footer-header mb-2">
         Made with <span class="text-primary-color">&#9829;</span> by Smile Gupta

@@ -1,4 +1,4 @@
-/*************** Style Ship Styles ***************/
+/*************** Style Ship General Styles ***************/
 
 .promotional-content-wrapper {
   padding: 2rem 2.5rem;
@@ -26,8 +26,11 @@
   padding: 1rem 0;
   background-color: #fafafa;
   margin: 2rem 0;
+  border: 1px solid var(--primary-color);
   overflow: auto;
+  border-radius: 0.3rem;
 }
+
 .code-snippet-display iframe {
   width: 100%;
   border: none;
@@ -38,6 +41,28 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+
+/*************** Style Ship Doc Site Styles ***************/
+
+.main-content {
+  padding: 2rem 2.5rem 0rem 2rem;
+}
+
+.doc-site-page-layout {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+.component-display-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin: 2rem 0;
+  border: 1px solid var(--primary-color);
+  align-items: center;
+  border-radius: 0.3rem;
+  width: 100%;
 }
 
 /*************** Media Queries for Small Screens ***************/
@@ -62,6 +87,14 @@
 
   .action-buttons {
     margin-bottom: calc(5 * var(--margin));
+  }
+
+  .doc-site-page-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .main-content {
+    padding: 1rem 2rem;
   }
 }
 
