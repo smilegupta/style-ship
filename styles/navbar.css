@@ -49,7 +49,7 @@
   display: none;
 }
 
-.navbar-sidebar {
+.navbar-side-drawer {
   height: 100%;
   width: 0;
   position: fixed;
@@ -61,21 +61,21 @@
   transition: 0.5s;
 }
 
-.sidebar-header {
+.navbar-side-drawer-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--primary-bg);
 }
 
-.sidebar-header-title {
+.navbar-side-drawer-header-title {
   font-weight: var(--font-bold);
   font-size: 2rem;
   color: var(--primary-color);
   font-family: "Marck Script", cursive;
 }
 
-.sidebar-menu-items:hover {
+.navbar-side-drawer-menu-items:hover {
   background-color: var(--primary-bg);
 }
 

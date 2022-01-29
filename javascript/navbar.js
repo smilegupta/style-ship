@@ -1,11 +1,9 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const sidebar = document.getElementById("toggle-sidebar");
+const sidebar = document.getElementById("toggle-navbar-sidedrawer");
 
-  function openNav() {
-    sidebar.style.width = "250px";
-  }
+function openNav() {
+  sidebar.style.width = "250px";
+}
 
-  function closeNav() {
-    sidebar.style.width = "0";
-  }
-});
+function closeNav() {
+  sidebar.style.width = "0";
+}
