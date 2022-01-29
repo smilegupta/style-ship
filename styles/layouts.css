@@ -30,6 +30,12 @@
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1024px) {
+  .grid-20-80-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .grid-4-column-layout {
     grid-template-columns: 1fr 1fr;
@@ -50,10 +56,6 @@
   }
 
   .grid-60-40-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .grid-20-80-layout {
     grid-template-columns: 1fr;
   }
 }
