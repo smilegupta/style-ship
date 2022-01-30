@@ -17,6 +17,7 @@
 @import "./buttons.css";
 @import "./sidebar.css";
 @import "./list.css";
+@import "./badges.css";
 @import "./typography.css";
 
 /*************** Project Initials ***************/
@@ -35,5 +36,4 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   min-height: 100vh;
-  position: relative;
 }

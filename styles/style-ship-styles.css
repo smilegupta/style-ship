@@ -54,7 +54,7 @@
   grid-template-columns: 20% 80%;
 }
 
-.component-display-container {
+.component-display-wrapper {
   display: flex;
   flex-wrap: wrap;
   padding: 1rem;
@@ -94,7 +94,6 @@
   }
   .main-content {
     padding: 1rem 2rem;
-    margin: 4rem 0rem;
   }
 }
 
