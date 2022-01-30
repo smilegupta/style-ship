@@ -1,5 +1,10 @@
 .avatar {
-  border: 2px solid white;
+  border: 2px solid var(--light-grey);
+  border-radius: 50%;
+}
+
+.avatar-square{
+  border-radius: 10%;
 }
 
 .avatar-text {
@@ -7,6 +12,7 @@
   justify-content: center;
   align-items: center;
   background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
 }
 
 .avatar-lg-size {
