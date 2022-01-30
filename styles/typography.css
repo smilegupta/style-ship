@@ -27,8 +27,16 @@ p {
   line-height: 1.125rem;
 }
 
+.big-text{
+  font-size: 1.125rem;
+}
+
 .text-primary-color {
   color: var(--primary-color);
+}
+
+.text-disabled{
+  color: var(--dark-grey);
 }
 
 .text-bold {

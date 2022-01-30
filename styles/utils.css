@@ -1,3 +1,7 @@
 .box-shadow {
   box-shadow: var(--default-box-shadow);
 }
+
+.cursor-pointer {
+  cursor: pointer;
+}
