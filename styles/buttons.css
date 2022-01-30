@@ -30,3 +30,11 @@
   background-color: var(--primary-color-hover);
   color: var(--text-color);
 }
+
+.btn-icon-primary {
+  color: var(--primary-color);
+}
+
+.btn-icon-secondary {
+  color: var(--secondary-color);
+}
