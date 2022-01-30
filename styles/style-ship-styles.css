@@ -92,9 +92,9 @@
   .doc-site-page-layout {
     grid-template-columns: 1fr;
   }
-
   .main-content {
     padding: 1rem 2rem;
+    margin: 4rem 0rem;
   }
 }
 
