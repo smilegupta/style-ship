@@ -54,7 +54,7 @@
   grid-template-columns: 20% 80%;
 }
 
-.component-display-container {
+.component-display-wrapper {
   display: flex;
   flex-wrap: wrap;
   padding: 1rem;
@@ -63,6 +63,10 @@
   align-items: center;
   border-radius: 0.3rem;
   width: 100%;
+}
+
+.component-display-wrapper > .btn-float {
+  position: static;
 }
 
 /*************** Media Queries for Small Screens ***************/
@@ -92,7 +96,6 @@
   .doc-site-page-layout {
     grid-template-columns: 1fr;
   }
-
   .main-content {
     padding: 1rem 2rem;
   }
