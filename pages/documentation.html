@@ -76,6 +76,9 @@
           <li class="list-non-bullet sidebar-item">
             <a class="link-no-style" href="#Avatar">Avatar</a>
           </li>
+          <li class="list-non-bullet sidebar-item">
+            <a class="link-no-style" href="#Badge">Badge</a>
+          </li>
           <!-- <li class="list-non-bullet sidebar-item">
             <a class="link-no-style" href="#Badge">Badge</a>
           </li>
@@ -124,10 +127,9 @@
              on navigation bar, in blogs grid items.
           </p>
           <h6 class="mt-5 mb-3"> Examples of different Avatar: </h6>
-          <p class="mb-3"> Avatar is available in 3 different sizes. You can use image in Avatar. 
-            You need to include class <span class="text-primary-color">avatar</span> in your codebase.
+          <p class="mb-3"> It can be used with 4 variants : avatar-lg-size | avatar-md-size | avatar-sm-size | avatar-text
           </p>
-          <div class="component-display-container">
+          <div class="component-display-wrapper">
             <div class="avatar avatar-lg-size mx-2">
               <img
                 src="https://image-dock-uploads-be.s3.ap-south-1.amazonaws.com/image.2022-01-29T18%3A45%3A22.573Z"
@@ -161,8 +163,62 @@
           </div>
           <div class="code-snippet-display">
             <code>
-              <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=auto&width=876&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-lg-size%2520mx-2%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fcdn.pixabay.com%252Fphoto%252F2021%252F03%252F31%252F03%252F12%252Fcat-6138366_1280.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2520img-round%2522%250A%2520%2520%2520%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-lg-size%2520avatar-text%2520avatar-round%2520mx-2%2522%253E%250A%2520%2520%2520SR%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md-size%2520mx-2%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fcdn.pixabay.com%252Fphoto%252F2021%252F03%252F31%252F03%252F12%252Fcat-6138366_1280.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2520img-round%2522%250A%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md-size%2520avatar-text%2520avatar-round%2520mx-2%2522%253E%250A%2509SG%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm-size%2520mx-2%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fcdn.pixabay.com%252Fphoto%252F2021%252F03%252F31%252F03%252F12%252Fcat-6138366_1280.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2520img-round%2522%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm-size%2520avatar-text%2520avatar-round%2520mx-2%2522%253E%250A%2520%2520%2520%2520%2520%2520AB%250A%253C%252Fdiv%253E"
-                      style="border:0; transform: scale(1); overflow:hidden;"
+              <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=876&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-lg-size%2520mx-2%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fcdn.pixabay.com%252Fphoto%252F2021%252F03%252F31%252F03%252F12%252Fcat-6138366_1280.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2520img-round%2522%250A%2520%2520%2520%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-lg-size%2520avatar-text%2520avatar-round%2520mx-2%2522%253E%250A%2520%2520%2520SR%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md-size%2520mx-2%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fcdn.pixabay.com%252Fphoto%252F2021%252F03%252F31%252F03%252F12%252Fcat-6138366_1280.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2520img-round%2522%250A%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md-size%2520avatar-text%2520avatar-round%2520mx-2%2522%253E%250A%2509SG%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm-size%2520mx-2%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fcdn.pixabay.com%252Fphoto%252F2021%252F03%252F31%252F03%252F12%252Fcat-6138366_1280.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2520img-round%2522%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm-size%2520avatar-text%2520avatar-round%2520mx-2%2522%253E%250A%2520%2520%2520%2520%2520%2520AB%250A%253C%252Fdiv%253E"
+                      style="width: 100%; height: auto; border:0; transform: scale(1); overflow:hidden;"
+                      sandbox="allow-scripts allow-same-origin">
+              </iframe>
+            </code>
+          </div>
+        </section>
+        <section id="Badge">
+          <h4 class="mb-3">Badge</h4>
+          <p class="mb-5">Badges are being used to display a notification count or status information.
+          </p>
+          <h6 class="mt-5 mb-3"> Examples of different Badges: </h6>
+          <p class="mb-3"> It can be used with 4 variants : online | offline | dnd | status
+          </p>
+          <div class="component-display-wrapper">
+            <div class="badge-wrapper">
+              <div class="avatar avatar-lg-size mx-2">
+                <img
+                  src="https://image-dock-uploads-be.s3.ap-south-1.amazonaws.com/image.2022-01-29T18%3A45%3A22.573Z"
+                  alt="avatar"
+                  class="img-responsive img-round"
+                />
+                <span class="status-badge-wrapper status-dnd"></span>
+              </div>
+            </div>
+            <div class="badge-wrapper">
+              <div class="avatar avatar-sm-size mx-2">
+                <img
+                  src="https://image-dock-uploads-be.s3.ap-south-1.amazonaws.com/image.2022-01-29T18%3A49%3A51.418Z"
+                  alt="avatar"
+                  class="img-responsive img-round"
+                />
+                <span class="status-badge-wrapper status-available"></span>
+              </div>
+            </div>
+            <div class="badge-wrapper">
+              <div class="avatar avatar-md-size mx-2">
+                <img
+                  src="https://image-dock-uploads-be.s3.ap-south-1.amazonaws.com/image.2022-01-29T18%3A51%3A31.435Z"
+                  alt="avatar"
+                  class="img-responsive img-round"
+                />
+                <span class="status-badge-wrapper status-away"></span>
+              </div>
+            </div>
+            <div class="badge-wrapper">
+              <button class="btn btn-icon-primary">
+                <i class="fas fa-home"></i>
+                <span class="status-badge-wrapper status-badge-number">5</span>
+              </button>
+            </div>
+          </div>
+          <div class="code-snippet-display">
+            <code>
+              <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=876&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge-wrapper%2522%253E%250A%2509%253Cdiv%2520class%253D%2522avatar%2520avatar-lg-size%2520mx-2%2522%253E%250A%2509%2509%253Cimg%2520src%253D%2522https%253A%252F%252Fimage-dock-uploads-be.s3.ap-south-1.amazonaws.com%252Fimage.2022-01-29T18%25253A45%25253A22.573Z%2522%250A%2509%2509%2509alt%253D%2522avatar%2522%250A%2509%2509%2509class%253D%2522img-responsive%2520img-round%2522%250A%2509%2509%252F%253E%250A%2509%2509%253Cspan%2520class%253D%2522status-badge-wrapper%2520status-dnd%2522%253E%253C%252Fspan%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-wrapper%2522%253E%250A%2509%253Cdiv%2520class%253D%2522avatar%2520avatar-sm-size%2520mx-2%2522%253E%250A%2509%2509%253Cimg%2520src%253D%2522https%253A%252F%252Fimage-dock-uploads-be.s3.ap-south-1.amazonaws.com%252Fimage.2022-01-29T18%25253A49%25253A51.418Z%2522%250A%2509%2509%2509alt%253D%2522avatar%2522%250A%2509%2509%2509class%253D%2522img-responsive%2520img-round%2522%250A%2509%2509%252F%253E%250A%2509%2509%253Cspan%2520class%253D%2522status-badge-wrapper%2520status-available%2522%253E%253C%252Fspan%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-wrapper%2522%253E%250A%2509%253Cdiv%2520class%253D%2522avatar%2520avatar-md-size%2520mx-2%2522%253E%250A%2509%2509%253Cimg%2520src%253D%2522https%253A%252F%252Fimage-dock-uploads-be.s3.ap-south-1.amazonaws.com%252Fimage.2022-01-29T18%25253A51%25253A31.435Z%2522%250A%2509%2509%2509%2520alt%253D%2522avatar%2522%250A%2509%2509%2509%2520class%253D%2522img-responsive%2520img-round%2522%250A%2509%2509%252F%253E%250A%2509%2509%253Cspan%2520class%253D%2522status-badge-wrapper%2520status-away%2522%253E%253C%252Fspan%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-wrapper%2522%253E%250A%2509%253Cbutton%2520class%253D%2522btn%2520btn-icon-primary%2522%253E%250A%2509%2509%253Ci%2520class%253D%2522fas%2520fa-home%2522%253E%253C%252Fi%253E%250A%2509%2509%253Cspan%2520class%253D%2522status-badge-wrapper%2520status-badge-number%2522%253E5%253C%252Fspan%253E%250A%2509%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
+                      style="width: 100%; height: auto; border:0; transform: scale(1); overflow:hidden;"
                       sandbox="allow-scripts allow-same-origin">
               </iframe>
             </code>
