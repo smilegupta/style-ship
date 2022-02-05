@@ -1,3 +1,5 @@
+/*************** Headings ***************/
+
 h1 {
   font-size: 3rem;
 }
@@ -22,25 +24,25 @@ h6 {
   font-size: 1.25rem;
 }
 
+/*************** Paragraph Styles ***************/
+
 p {
   font-size: 1rem;
   line-height: 1.125rem;
 }
 
-.big-text{
-  font-size: 1.125rem;
-}
+/*************** More on Typogrqaphy ***************/
 
 .text-primary-color {
   color: var(--primary-color);
 }
 
-.text-disabled{
-  color: var(--dark-grey);
+.text-secondary-color {
+  color: var(--secondary-color);
 }
 
-.text-bold {
-  font-weight: bold;
+.text-disabled {
+  color: var(--dark-grey);
 }
 
 .text-uppercase {
@@ -55,16 +57,48 @@ p {
   text-transform: capitalize;
 }
 
-.text-cursor-pointer {
-  cursor: pointer;
+.small-text {
+  font-size: 0.875rem;
+}
+
+.big-text {
+  font-size: 1.125rem;
+}
+
+.text-light {
+  font-weight: lighter;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-no-underline {
+  text-decoration: none;
 }
 
 .text-center {
   text-align: center;
 }
 
-.text-no-underline {
-  text-decoration: none;
+.text-right {
+  text-align: end;
+}
+
+.text-left {
+  text-align: start;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .link-no-style {
@@ -74,4 +108,8 @@ p {
   border: none;
   cursor: pointer;
   padding: 0;
+}
+
+.text-cursor-pointer {
+  cursor: pointer;
 }

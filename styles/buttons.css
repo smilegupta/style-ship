@@ -11,6 +11,8 @@
   font-size: 1.125rem;
 }
 
+/*************** Primary Button Styles ***************/
+
 .btn-solid-primary {
   background-color: var(--primary-color);
   color: var(--text-color);
@@ -35,6 +37,140 @@
   color: var(--primary-color);
 }
 
+.link-text-primary {
+  text-decoration: underline var(--primary-color);
+  text-underline-position: under;
+  color: var(--primary-color);
+}
+
+.link-text-primary:hover {
+  color: var(--primary-color-hover);
+  text-decoration-thickness: 3px;
+  font-weight: bold;
+}
+
+/*************** Secondary Button Styles ***************/
+
+.btn-solid-secondary {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.btn-solid-secondary:hover {
+  background-color: var(--secondary-color-hover);
+}
+
+.btn-outline-secondary {
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.btn-outline-secondary:hover {
+  border: 1px solid var(--secondary-color-hover);
+  background-color: var(--secondary-color-hover);
+  color: var(--text-color);
+}
+
 .btn-icon-secondary {
   color: var(--secondary-color);
+}
+
+.link-text-secondary {
+  text-decoration: underline var(--secondary-color);
+  text-underline-position: under;
+  color: var(--secondary-color);
+}
+
+.link-text-secondary:hover {
+  color: var(--secondary-color-hover);
+  text-decoration-thickness: 3px;
+  font-weight: bold;
+}
+
+/*************** Disabled Button Styles ***************/
+
+.btn-disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/*************** Buttons with Different Sizes ***************/
+
+.btn-lg-size {
+  font-size: 1.5rem;
+  padding: 1rem 1.5rem;
+}
+.btn-sm-size {
+  font-size: 0.8rem;
+  padding: 0.25rem 0.5rem;
+}
+
+/*************** Floating and Toggle Buttons ***************/
+
+.btn-float {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 50px;
+  height: 50px;
+  font-size: 1.125rem;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  z-index: 2;
+}
+
+.btn-float:hover {
+  background-color: var(--primary-color-hover);
+  transform: scale(1.05, 1.05);
+}
+
+.btn-toggle {
+  position: relative;
+  height: 26px;
+  width: 44px;
+  display: block;
+  cursor: pointer;
+}
+
+.btn-checkbox {
+  height: 0;
+  width: 0;
+  margin: 0;
+  opacity: 0;
+}
+
+.btn-toggle .btn-slider {
+  position: absolute;
+  top: 0;
+  left: 9px;
+  height: 26px;
+  width: 26px;
+  background-color: var(--primary-color);
+  border-radius: 20%;
+}
+
+.btn-toggle .btn-slider::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 18px;
+  width: 26px;
+  height: 26px;
+  border-radius: 20%;
+  background-color: rgb(226, 226, 226);
+  transition: 0.4s;
+}
+
+.btn-toggle .btn-checkbox:checked + .btn-slider {
+  background-color: var(--secondary-color);
+}
+
+.btn-toggle .btn-checkbox:checked + .btn-slider::after {
+  transform: translateX(-36px);
 }

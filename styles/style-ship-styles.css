@@ -65,6 +65,10 @@
   width: 100%;
 }
 
+.component-display-wrapper > .btn-float {
+  position: static;
+}
+
 /*************** Media Queries for Small Screens ***************/
 
 @media screen and (max-width: 1024px) {
