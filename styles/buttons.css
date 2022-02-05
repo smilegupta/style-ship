@@ -38,8 +38,7 @@
 }
 
 .link-text-primary {
-  text-decoration-color: var(--primary-color);
-  text-decoration: underline;
+  text-decoration: underline var(--primary-color);
   text-underline-position: under;
   color: var(--primary-color);
 }
@@ -77,8 +76,7 @@
 }
 
 .link-text-secondary {
-  text-decoration-color: var(--secondary-color);
-  text-decoration: underline;
+  text-decoration: underline var(--secondary-color);
   text-underline-position: under;
   color: var(--secondary-color);
 }
