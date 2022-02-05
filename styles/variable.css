@@ -20,7 +20,7 @@
   --text-color: #ffffff;
   --dark-grey: rgb(100, 100, 100);
   --grey: rgb(150, 150, 150);
-  --grey-highlight: rgb(150, 150, 150, 0.2);
+  --grey-highlight: rgb(150, 150, 150, 0.5);
   --light-grey: rgb(240, 240, 240);
   --default-box-shadow: 0px 0px 6px -2px grey;
   --padding: 0.25rem;

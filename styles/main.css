@@ -7,8 +7,6 @@
 @import "./variable.css";
 @import "./utils.css";
 @import "./layouts.css";
-@import "./padding.css";
-@import "./margin.css";
 @import "./avatar.css";
 @import "./images.css";
 @import "./card.css";
@@ -18,6 +16,8 @@
 @import "./sidebar.css";
 @import "./list.css";
 @import "./badges.css";
+@import "./padding.css";
+@import "./margin.css";
 @import "./typography.css";
 
 /*************** Project Initials ***************/

@@ -47,6 +47,7 @@
 
 .main-content {
   padding: 2rem 2.5rem 0rem 2rem;
+  overflow: hidden;
 }
 
 .doc-site-page-layout {
@@ -72,6 +73,10 @@
 .image-dummy-size {
   height: 200px;
   width: 200px;
+}
+
+.component-display-wrapper > .card {
+  width: 370px;
 }
 
 /*************** Media Queries for Small Screens ***************/

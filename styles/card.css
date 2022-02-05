@@ -8,11 +8,12 @@
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.5rem;
+  flex-wrap: wrap;
 }
 
-.card-image{
-  border-top-left-radius:0.5rem;
-  border-top-right-radius:0.5rem;
+.card-image {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 
 .card-title {
@@ -34,7 +35,15 @@
 }
 
 .card-content-wrapper:hover {
-  background-color: var(--grey-highlight);
+  background-color: var(--light-grey);
+}
+
+.card-horizontal {
+  flex-direction: row;
+}
+
+.card-horizontal .card-image-wrapper{
+  width: 50%;
 }
 
 .card-content {
@@ -46,6 +55,7 @@
 .card-footer {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .card-footer-buttons {
@@ -54,6 +64,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .card-footer-icons {
@@ -62,5 +73,5 @@
   align-items: center;
   justify-content: flex-end;
   flex-grow: 1;
+  flex-wrap: wrap;
 }
-
