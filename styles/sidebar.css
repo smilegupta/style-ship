@@ -30,6 +30,8 @@
   background-color: var(--primary-bg);
 }
 
+/*************** Media Queries ***************/
+
 @media screen and (max-width: 1024px) {
   .sidebar {
     overflow-y: hidden;

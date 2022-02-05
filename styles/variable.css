@@ -3,9 +3,10 @@
   --default-font-size: 87.5%; /* 14px */
   --primary-color: #ca965c;
   --primary-bg: #ca965c1a;
-  --primary-color-hover: #ba8b561a;
+  --primary-color-hover: #ba8b56;
   --secondary-color: #876445;
   --secondary-bg: #8764451a;
+  --secondary-color-hover: #57402c;
   --background-color: #eec373;
   --card-background: #f4dfba;
   --info-color: #5dc4eb;

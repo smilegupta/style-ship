@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.status-badge-wrapper {
+.badge-status-wrapper {
   position: absolute;
   bottom: 12%;
   right: 12%;
@@ -12,17 +12,17 @@
   border: 2px solid white;
 }
 
-.badge-wrapper > .avatar-lg-size > .status-badge-wrapper {
+.badge-wrapper > .avatar-lg-size > .badge-status-wrapper {
   height: 1.25rem;
   width: 1.25rem;
 }
 
-.badge-wrapper > .avatar-md-size > .status-badge-wrapper {
+.badge-wrapper > .avatar-md-size > .badge-status-wrapper {
   height: 1rem;
   width: 1rem;
 }
 
-.badge-wrapper > .avatar-sm-size > .status-badge-wrapper {
+.badge-wrapper > .avatar-sm-size > .badge-status-wrapper {
   height: 0.8rem;
   width: 0.8rem;
 }
