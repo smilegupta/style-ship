@@ -96,11 +96,11 @@
 
 /*************** Buttons with Different Sizes ***************/
 
-.btn-lg-size {
+.btn-lg {
   font-size: 1.5rem;
   padding: 1rem 1.5rem;
 }
-.btn-sm-size {
+.btn-sm {
   font-size: 0.8rem;
   padding: 0.25rem 0.5rem;
 }
