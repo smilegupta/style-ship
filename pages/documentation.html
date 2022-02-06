@@ -85,10 +85,10 @@
           <li class="list-non-bullet sidebar-item">
             <a class="link-no-style" href="#Image">Image</a>
           </li>
-          <!--  <li class="list-non-bullet sidebar-item">
+          <li class="list-non-bullet sidebar-item">
             <a class="link-no-style" href="#Cards">Cards</a>
           </li>
-          <li class="list-non-bullet sidebar-item">
+          <!-- <li class="list-non-bullet sidebar-item">
             <a class="link-no-style" href="#Form">Form</a>
           </li>
           <li class="list-non-bullet sidebar-item">
@@ -239,9 +239,9 @@
           <div class="component-display-wrapper">
             <a class="btn btn-solid-primary m-2">Primary Solid Button</a>  
             <a class="btn btn-outline-primary m-2">Primary Outline Button</a>
-            <a class="btn btn-icon-primary"><i class="fas fa-shopping-cart"></i></a>
+            <a class="btn btn-icon-primary m-2"><i class="fas fa-shopping-cart"></i></a>
             <a class="btn btn-solid-primary m-2"><i class="fas fa-shopping-cart mr-2"></i>Add to Cart</a>  
-            <a class="btn link-text-primary">Primary Text</a>
+            <a class="btn link-text-primary m-2">Primary Text</a>
           </div>
           <div class="code-snippet-display">
             <code>
@@ -346,16 +346,213 @@
           </p>
           <div class="component-display-wrapper">
             <img loading="lazy" 
-                 class="img-responsive img-round image-dummy-size m-3" 
+                 class="img-responsive img-round image-dummy-size p-3" 
                  src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794__480.jpg" 
                  alt="cute-dog"
             />
 
             <img loading="lazy" 
-                 class="img-responsive img-square image-dummy-size m-3" 
+                 class="img-responsive img-square image-dummy-size p-3" 
                  src="https://cdn.pixabay.com/photo/2021/01/21/16/17/english-cocker-spaniel-5937757__480.jpg" 
                  alt="cute-dog"
             />
+          </div>
+        </section>
+        <section id="Cards">
+          <h4 class="mb-3">Cards</h4>
+          <h6 class="mt-5 mb-3"> Example of Basic Card:</h6>
+          <div class="component-display-wrapper">
+            <div class="card">
+              <div class="card-body p-4">
+                <div class="card-title mb-2">
+                  Jacket
+                </div>
+                <div class="card-content">
+                  An outer garment extending either to the waist or the hips, typically having sleeves and a fastening down the front.
+                </div>
+              </div>
+              <button class="btn btn-solid-primary w-100">
+                Learn More
+              </button>
+            </div>
+          </div>
+          <h6 class="mt-5 mb-3"> Example of Image Card:</h6>
+          <div class="component-display-wrapper">
+            <div class="card m-4">
+              <div>
+                <img src="https://rukminim1.flixcart.com/image/540/648/ksyz8280/jacket/p/8/9/38-no-226779501-only-original-imag6fyzqzg3h5ps.jpeg?q=50"
+                    alt="jacket"
+                    class="img-responsive img-square"
+                />    
+              </div>
+              <div class="card-body p-4">
+                <div class="card-title mb-2 text-center">
+                  Jacket
+                </div>
+                
+                <div class="card-title mb-2 text-center">
+                  Rs. 3,000
+                </div>
+                
+              </div>
+              <button class="btn btn-solid-primary w-100">
+                Add to cart
+              </button>
+            </div>
+          </div>
+          <h6 class="mt-5 mb-3"> Example of E-Commerce Card:</h6>
+          <div class="component-display-wrapper">
+            <div class="card m-4">
+              <span class="card-badge">New</span>
+              <div>
+                <img src="https://rukminim1.flixcart.com/image/540/648/ksyz8280/jacket/p/8/9/38-no-226779501-only-original-imag6fyzqzg3h5ps.jpeg?q=50"
+                    alt="jacket"
+                    class="img-responsive img-square"
+                />    
+              </div>
+              <div class="card-body p-4">
+                <div class="card-title mb-2 text-center">
+                  Jacket
+                </div>
+                
+                <div class="card-title mb-2 text-center">
+                  Rs. 3,000
+                </div>
+                
+              </div>
+              <button class="btn btn-solid-primary w-100">
+                Add to cart
+              </button>
+            </div>
+            <div class="card m-4">
+              <span class="card-badge-right"><i class="far fa-heart"></i></span>
+              <div>
+                <img src="https://rukminim1.flixcart.com/image/540/648/ksyz8280/jacket/p/8/9/38-no-226779501-only-original-imag6fyzqzg3h5ps.jpeg?q=50"
+                    alt="jacket"
+                    class="img-responsive img-square"
+                />    
+              </div>
+              <div class="card-body p-4">
+                <div class="card-title mb-2 text-center">
+                  Jacket
+                </div>
+                
+                <div class="card-title mb-2 text-center">
+                  Rs. 3,000 <span class="ecom-original-price px-2"> Rs. 999 </span> <span class="ecom-discount"> (10% OFF) </span>
+                </div>
+                
+              </div>
+              <button class="btn btn-solid-primary w-100">
+                Add to cart
+              </button>
+            </div>
+            <div class="card m-4">
+              <span class="card-badge-right"><i class="fas fa-times"></i></span>
+              <div>
+                <img src="https://rukminim1.flixcart.com/image/540/648/ksyz8280/jacket/p/8/9/38-no-226779501-only-original-imag6fyzqzg3h5ps.jpeg?q=50"
+                    alt="jacket"
+                    class="img-responsive img-square"
+                />    
+              </div>
+              <div class="card-body p-4">
+                <div class="card-title mb-2 text-center">
+                  Jacket
+                </div>
+                
+                <div class="card-title mb-2 text-center">
+                  Rs. 3,000 <span class="ecom-original-price px-2"> Rs. 999 </span> <span class="ecom-discount"> (10% OFF) </span>
+                </div>
+                
+              </div>
+              <button class="btn btn-solid-primary w-100">
+                Add to cart
+              </button>
+            </div>
+          </div>
+          <h6 class="mt-5 mb-3"> Example of Card with Text Overlay</h6>
+          <div class="component-display-wrapper">
+            <div class="card m-4">
+              <div class="overlay-container">
+                <div class="overlay-text">
+                  <div class="text-container w-100 text-center text-bold p-3">Out Of Stock</div>
+              </div>
+                <span class="card-badge">New</span>
+                <div>
+                  <img src="https://rukminim1.flixcart.com/image/540/648/ksyz8280/jacket/p/8/9/38-no-226779501-only-original-imag6fyzqzg3h5ps.jpeg?q=50"
+                      alt="jacket"
+                      class="img-responsive img-square"
+                  />    
+                </div>
+                <div class="card-body p-4">
+                  <div class="card-title mb-2 text-center">
+                    Jacket
+                  </div>
+                  
+                  <div class="card-title mb-2 text-center">
+                    Rs. 3,000
+                  </div>
+                  
+                </div>
+                <button class="btn btn-solid-primary w-100">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <h6 class="mt-5 mb-3"> Example of Social Media Card</h6>
+          <div class="component-display-wrapper">
+            <div class="card m-4">
+              <div class="card-header p-4">
+                <div class="d-flex">
+                  <img
+                    src="https://image-dock-uploads-be.s3.ap-south-1.amazonaws.com/image.2022-01-29T18%3A51%3A31.435Z"
+                    alt="avatar"
+                    class="img-responsive img-round avatar-sm-size avatar "
+                    loading="lazy"
+                  />
+                  <span class="px-2"> Smile Gupta </span>
+                </div>
+              </div>
+              <div class="card-image">
+                <img src="https://rukminim1.flixcart.com/image/540/648/ksyz8280/jacket/p/8/9/38-no-226779501-only-original-imag6fyzqzg3h5ps.jpeg?q=50"
+                    alt="jacket"
+                    class="img-responsive img-square"
+                />    
+              </div>
+              <div class="card-body p-4">
+                <div class="card-content mb-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, inventore nisi. Dolore quo quas illo sed ullam labore totam sint.
+                </div>
+              </div>
+            </div>
+          </div>
+          <h6 class="mt-5 mb-3"> Example of Horizontal Card</h6>
+          <div class="component-display-wrapper">
+            <div class="card card-horizontal m-4">
+              <div class="card-image-wrapper">
+                <img src="https://rukminim1.flixcart.com/image/540/648/ksyz8280/jacket/p/8/9/38-no-226779501-only-original-imag6fyzqzg3h5ps.jpeg?q=50"
+                    alt="jacket"
+                    class="img-responsive img-square"
+                />    
+              </div>
+              <div class="card-body p-4">
+                <div class="card-title mb-2">
+                  Jacket
+                </div>
+                <div class="card-title mb-2">
+                  Rs. 3,000 <span class="ecom-original-price px-2"> Rs. 999 </span> <span class="ecom-discount"> (10% OFF) </span>
+                </div>
+                <div class="card-content mb-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, inventore nisi. Dolore quo quas illo sed ullam labore totam sint.
+                </div>
+                <button class="btn btn-solid-primary my-2">
+                  Add to cart
+                </button>
+                <button class="btn btn-outline-primary my-2">
+                  Add to wishlist
+                </button>
+              </div>
+            </div>
           </div>
         </section>
       </div>

@@ -6,7 +6,6 @@
   text-align: center;
   outline: none;
   cursor: pointer;
-  border-radius: var(--button-border);
   padding: 0.5rem 1rem;
   font-size: 1.125rem;
 }
