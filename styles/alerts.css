@@ -1,0 +1,25 @@
+.alert {
+	width: 100%;
+	max-width: 50rem;
+    border-radius: var(--button-border);
+}
+
+.success {
+	color: var(--success-color);
+	background-color: var(--success-bg);
+}
+
+.info {
+	color: var(--info-color);
+	background-color: var(--info-bg);
+}
+
+.error {
+	color: var(--danger-color);
+	background-color: var(--danger-bg);
+}
+
+.warning {
+	color: var(--warning-color);
+	background-color: var(--warning-bg);
+}

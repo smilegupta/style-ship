@@ -5,7 +5,6 @@
 /*************** Component Imports ***************/
 @import "./reset.css";
 @import "./variable.css";
-@import "./utils.css";
 @import "./layouts.css";
 @import "./images.css";
 @import "./avatar.css";
@@ -19,6 +18,8 @@
 @import "./padding.css";
 @import "./margin.css";
 @import "./typography.css";
+@import "./alerts.css";
+@import "./utils.css";
 
 /*************** Project Initials ***************/
 *,
