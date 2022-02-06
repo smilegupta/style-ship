@@ -1,24 +1,22 @@
-.card {
+.card{
   position: relative;
   display: flex;
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color:var(--white);
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.5rem;
+  box-shadow: var(--default-box-shadow);
 }
 
-.card-image{
-  border-top-left-radius:0.5rem;
-  border-top-right-radius:0.5rem;
-}
+/*************** Card Content Typography ***************/
 
 .card-title {
   font-size: 1.25rem;
   font-weight: var(--font-bold);
   letter-spacing: 0.0125em;
+  line-height: 1.75rem;
 }
 
 .card-subtitle {
@@ -28,39 +26,95 @@
   color: var(--dark-grey);
 }
 
-.card-content-wrapper {
-  display: flex;
-  flex-direction: column;
+.card-content {
+  letter-spacing: 0.0125em;
+  line-height: 1.5rem;
 }
 
-.card-content-wrapper:hover {
+/*************** Card Badges Styles ***************/
+
+.card-badge{
+  padding: 2px 10px;
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  border-radius: 0.25rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.card-badge:hover{
+  background-color: var(--primary-color-hover);
+  position: absolute;
+}
+
+.card-badge-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  background-color: var(--white);
+  color: var(--primary-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.card-badge-right:hover{
+  transform: scale(0.95, 0.95);
+}
+
+/*************** E Commerce Card Styles ***************/
+
+.ecom-original-price{
+  color: var(--dark-grey);
+  text-decoration: line-through;
+}
+
+.ecom-discount{
+  color: var(--danger-color);
+  font-size: 0.875rem;
+}
+
+/*************** Disabled Card Styles ***************/
+
+.overlay-container {
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 0rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--grey-highlight);
 }
 
-.card-content {
-  line-height: 1.25rem;
-  font-weight: var(--font-bold);
-  color: var(--dark-grey);
+.overlay-text .text-container {
+  background-color: var(--primary-color);
 }
 
-.card-footer {
-  display: flex;
-  justify-content: space-between;
-}
+/*************** Horizontal Styles ***************/
 
-.card-footer-buttons {
-  flex-grow: 1;
-  display: flex;
+.card-horizontal {
   flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
 }
 
-.card-footer-icons {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  flex-grow: 1;
+.card-horizontal .card-image-wrapper{
+  width: 50%;
 }
 
+.card-horizontal .card-body{
+  width: 50%;
+}

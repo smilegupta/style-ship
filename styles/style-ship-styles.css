@@ -47,6 +47,7 @@
 
 .main-content {
   padding: 2rem 2.5rem 0rem 2rem;
+  overflow: hidden;
 }
 
 .doc-site-page-layout {
@@ -61,12 +62,26 @@
   margin: 2rem 0;
   border: 1px solid var(--primary-color);
   align-items: center;
+  justify-content: center;
   border-radius: 0.3rem;
   width: 100%;
 }
 
 .component-display-wrapper > .btn-float {
   position: static;
+}
+
+.image-dummy-size {
+  height: 200px;
+  width: 200px;
+}
+
+.component-display-wrapper > .card {
+  max-width: 250px;
+}
+
+.component-display-wrapper > .card.card-horizontal {
+  max-width: 500px;
 }
 
 /*************** Media Queries for Small Screens ***************/
