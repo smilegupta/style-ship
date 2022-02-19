@@ -3,7 +3,7 @@
   top: 0rem;
   box-shadow: 0 4px 12px 0 rgb(0 0 0 / 10%);
   background-color: var(--white);
-  z-index: 2;
+  z-index: 3;
 }
 
 .sidebar-header {

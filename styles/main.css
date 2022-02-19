@@ -20,6 +20,8 @@
 @import "./typography.css";
 @import "./alerts.css";
 @import "./utils.css";
+@import "./slider.css";
+@import "./rating.css";
 
 /*************** Project Initials ***************/
 *,
