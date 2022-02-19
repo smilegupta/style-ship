@@ -23,6 +23,7 @@
   --grey-highlight: rgb(150, 150, 150, 0.5);
   --light-grey: rgb(240, 240, 240);
   --default-box-shadow: 0px 3px 6px 0px rgb(105 111 125 / 49%);
+  --padding-form-elements: 16px 13px;
   --padding: 0.25rem;
   --margin: 0.25rem;
   --font-light: 300;
@@ -30,6 +31,7 @@
   --font-semi-bold: 600;
   --font-bold: 700;
   --button-border: 0.25rem;
+  --form-elements-border: 0.25rem;
   --white: #ffffff;
   --black: #000000;
 }
