@@ -1,97 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta Information -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Smile Gupta" />
-    <meta name="description" content="Style Ship is a UI Component Library built with an aim to ship UI faster" />
 
-    <!-- External Imports -->
-    <link rel="icon"
-      href="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-ship-ecommerce-kiranshastry-lineal-color-kiranshastry.png" />
-    <link rel="stylesheet" href="../styles/main.css" />
-    <link rel="stylesheet" href="../styles/style-ship-styles.css" />
-    <script src="../javascript/navbar.js" defer></script>
-    <script src="../javascript/sidebar.js" defer></script>
+<head>
+  <!-- Meta Information -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Smile Gupta" />
+  <meta name="description" content="Style Ship is a UI Component Library built with an aim to ship UI faster" />
 
-    <!-- Page Title-->
-    <title>Style Ship | Documentation</title>
-  </head>
-  <body>
-    <nav class="navbar box-shadow">
-      <div id="navbar-menu-desktop" class="navbar-section">
-        <div class="navbar-branding mr-3">
-          <a class="link-no-style" href="../index.html"> 
-            Style Ship
-          </a>
-        </div>
-        <div class="navbar-options">
-          <button class="btn navbar-pills mx-2">
-            <a href="../index.html" class="link-no-style"> Home </a>
-          </button>
-          <button class="btn navbar-pills mx-2">
-            <a href="./installation.html" class="link-no-style"> Installation </a>
-          </button>
-          <button class="btn navbar-pills mx-2 navbar-pills-active">
-            <a href="./documentation.html" class="link-no-style"> Documentation </a>
-          </button>
-        </div>
+  <!-- External Imports -->
+  <link rel="icon"
+    href="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-ship-ecommerce-kiranshastry-lineal-color-kiranshastry.png" />
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/style-ship-styles.css" />
+  <script src="../javascript/navbar.js" defer></script>
+  <script src="../javascript/sidebar.js" defer></script>
+
+  <!-- Page Title-->
+  <title>Style Ship | Documentation</title>
+</head>
+
+<body>
+  <nav class="navbar box-shadow">
+    <div id="navbar-menu-desktop" class="navbar-section">
+      <div class="navbar-branding mr-3">
+        <a class="link-no-style" href="../index.html">
+          Style Ship
+        </a>
       </div>
-      <div id="navbar-menu-mobile" class="navbar-section">
-        <button class="btn" onclick="openNav()">
-          <i class="fas fa-bars navbar-icon text-primary-color"></i>
+      <div class="navbar-options">
+        <button class="btn navbar-pills mx-2">
+          <a href="../index.html" class="link-no-style"> Home </a>
         </button>
-        <div id="toggle-navbar-sidedrawer" class="navbar-side-drawer box-shadow">
-          <div class="navbar-side-drawer-header p-4">
-            <span class="navbar-side-drawer-header-title"> Style Ship </span>
-            <button onclick="closeNav()" class="btn navbar-side-drawer-header-title">X</button>
-          </div>
-          <ul class="sidebar-menu">
-            <li class="p-4 navbar-side-drawer-menu-items">  <a href="../index.html" class="link-no-style"> Home </a> </li>
-            <li class="p-4 navbar-side-drawer-menu-items">  <a href="./installation.html" class="link-no-style"> Installation </a> </li>
-            <li class="p-4 navbar-side-drawer-menu-items">  <a href="./documentation.html" class="link-no-style"> Documentation </a> </li>
-        </div>
-      </div>
-      </div>
-      <div class="navbar-section">
-        <button class="btn navbar-pills ml-2 navbar-icon" id="theme-toggle">
-          <i class="fas fa-moon"></i>
+        <button class="btn navbar-pills mx-2">
+          <a href="./installation.html" class="link-no-style"> Installation </a>
+        </button>
+        <button class="btn navbar-pills mx-2 navbar-pills-active">
+          <a href="./documentation.html" class="link-no-style"> Documentation </a>
         </button>
       </div>
-    </nav>
-    <section class="doc-site-page-layout">
-      <div class="sidebar" id="sidebar-toggle">
-        <div class="sidebar-header mb-2" id="sidebar-header-wrapper">
-          <span class="sidebar-title">Components</span>
-          <span class="sidebar-arrow"> 
-            <i class="fas fa-chevron-down cursor-pointer"></i>
-          </span>
+    </div>
+    <div id="navbar-menu-mobile" class="navbar-section">
+      <button class="btn" onclick="openNav()">
+        <i class="fas fa-bars navbar-icon text-primary-color"></i>
+      </button>
+      <div id="toggle-navbar-sidedrawer" class="navbar-side-drawer box-shadow">
+        <div class="navbar-side-drawer-header p-4">
+          <span class="navbar-side-drawer-header-title"> Style Ship </span>
+          <button onclick="closeNav()" class="btn navbar-side-drawer-header-title">X</button>
         </div>
-        <ul class="sidebar-items-wrapper">
-          <li class="list-non-bullet sidebar-item">
-            <a class="link-no-style" href="#Alerts">Alerts</a>
-          </li>
-          <li class="list-non-bullet sidebar-item">
-            <a class="link-no-style" href="#Avatar">Avatar</a>
-          </li>
-          <li class="list-non-bullet sidebar-item">
-            <a class="link-no-style" href="#Badge">Badge</a>
-          </li>
-          <li class="list-non-bullet sidebar-item">
-            <a class="link-no-style" href="#Button">Button</a>
-          </li>
-          <li class="list-non-bullet sidebar-item">
-            <a class="link-no-style" href="#Image">Image</a>
-          </li>
-          <li class="list-non-bullet sidebar-item">
-            <a class="link-no-style" href="#Cards">Cards</a>
-          </li>
-          <li class="list-non-bullet sidebar-item">
-            <a class="link-no-style" href="#Slider">Slider</a>
-          </li>
-          <!-- <li class="list-non-bullet sidebar-item">
+        <ul class="sidebar-menu">
+          <li class="p-4 navbar-side-drawer-menu-items"> <a href="../index.html" class="link-no-style"> Home </a> </li>
+          <li class="p-4 navbar-side-drawer-menu-items"> <a href="./installation.html" class="link-no-style">
+              Installation </a> </li>
+          <li class="p-4 navbar-side-drawer-menu-items"> <a href="./documentation.html" class="link-no-style">
+              Documentation </a> </li>
+      </div>
+    </div>
+    </div>
+    <div class="navbar-section">
+      <button class="btn navbar-pills ml-2 navbar-icon" id="theme-toggle">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </nav>
+  <section class="doc-site-page-layout">
+    <div class="sidebar" id="sidebar-toggle">
+      <div class="sidebar-header mb-2" id="sidebar-header-wrapper">
+        <span class="sidebar-title">Components</span>
+        <span class="sidebar-arrow">
+          <i class="fas fa-chevron-down cursor-pointer"></i>
+        </span>
+      </div>
+      <ul class="sidebar-items-wrapper">
+        <li class="list-non-bullet sidebar-item">
+          <a class="link-no-style" href="#Alerts">Alerts</a>
+        </li>
+        <li class="list-non-bullet sidebar-item">
+          <a class="link-no-style" href="#Avatar">Avatar</a>
+        </li>
+        <li class="list-non-bullet sidebar-item">
+          <a class="link-no-style" href="#Badge">Badge</a>
+        </li>
+        <li class="list-non-bullet sidebar-item">
+          <a class="link-no-style" href="#Button">Button</a>
+        </li>
+        <li class="list-non-bullet sidebar-item">
+          <a class="link-no-style" href="#Image">Image</a>
+        </li>
+        <li class="list-non-bullet sidebar-item">
+          <a class="link-no-style" href="#Cards">Cards</a>
+        </li>
+        <li class="list-non-bullet sidebar-item">
+          <a class="link-no-style" href="#Slider">Slider</a>
+        </li>
+        <li class="list-non-bullet sidebar-item">
+          <a class="link-no-style" href="#Typography">Typography</a>
+        </li>
+        <!-- <li class="list-non-bullet sidebar-item">
             <a class="link-no-style" href="#Form">Form</a>
           </li>
           <li class="list-non-bullet sidebar-item">
@@ -118,490 +125,485 @@
           <li class="list-non-bullet sidebar-item">
             <a class="link-no-style" href="#Toast">Toast</a>
           </li> -->
-        </ul>
-      </div>
-      <div class="main-content">
-        <section id="#Alerts">
-          <h4 class="mb-3">Alerts</h4>
-          <h6 class="mt-5 mb-3"> Examples of different Alerts: </h6>
-          <p class="mb-3"> It can be used with 4 variants : success | info | error | warning
-          </p>
-          <div class="component-display-wrapper flex-column">
-            <div class="alert success d-flex align-center w-50 p-4 mb-2">
-              <p> <i class="fas fa-check-circle mr-2"></i> This is a success alert </p>
-            </div>
-            <div class="alert info d-flex align-center w-50 p-4 mb-2">
-              <p> <i class="fas fa-info-circle mr-2"></i> This is a info alert </p>
-            </div>
-            <div class="alert error d-flex align-center w-50 p-4 mb-2">
-              <p><i class="fas fa-times-circle mr-2"></i> This is a error alert </p>
-            </div>
-            <div class="alert warning d-flex align-center w-50 p-4 mb-2">
-              <p><i class="fas fa-exclamation-triangle mr-2"></i>This is a warning alert </p>
-            </div>
+      </ul>
+    </div>
+    <div class="main-content">
+      <section id="#Alerts">
+        <h4 class="mb-3">Alerts</h4>
+        <h6 class="mt-5 mb-3"> Examples of different Alerts: </h6>
+        <p class="mb-3"> It can be used with 4 variants : success | info | error | warning
+        </p>
+        <div class="component-display-wrapper flex-column">
+          <div class="alert success d-flex align-center w-50 p-4 mb-2">
+            <p> <i class="fas fa-check-circle mr-2"></i> This is a success alert </p>
           </div>
-        </section>
-        <section id="Avatar">
-          <h4 class="mb-3">Avatar</h4>
-          <p class="mb-5">Avatar can be used to show user's profile picture on profile information page,
-             on navigation bar, in blogs grid items.
-          </p>
-          <h6 class="mt-5 mb-3"> Examples of different Avatar: </h6>
-          <p class="mb-3"> It can be used with 4 variants : avatar-lg-size | avatar-md-size | avatar-sm-size | avatar-text
-          </p>
-          <div class="component-display-wrapper">
-            <div class="avatar avatar-lg-size mx-2">
-              <img
-                src="https://image-dock-uploads-be.s3.ap-south-1.amazonaws.com/image.2022-01-29T18%3A45%3A22.573Z"
-                alt="avatar"
-                class="img-responsive img-round"
-                loading="lazy"
-              />
-            </div>
-            <div class="avatar avatar-lg-size avatar-text avatar-round mx-2">
-              SR
-            </div>
-            <div class="avatar avatar-md-size mx-2">
-              <img
-                src="https://image-dock-uploads-be.s3.ap-south-1.amazonaws.com/image.2022-01-29T18%3A49%3A51.418Z"
-                alt="avatar"
-                class="img-responsive img-round"
-                loading="lazy"
-              />
-            </div>
-            <div class="avatar avatar-md-size avatar-text avatar-round mx-2">
-              SG
-            </div>
-            <div class="avatar avatar-sm-size mx-2">
-              <img
-                src="https://image-dock-uploads-be.s3.ap-south-1.amazonaws.com/image.2022-01-29T18%3A51%3A31.435Z"
-                alt="avatar"
-                class="img-responsive img-round"
-                loading="lazy"
-              />
-            </div>
-            <div class="avatar avatar-sm-size avatar-text avatar-round mx-2">
-              AB
-            </div>
+          <div class="alert info d-flex align-center w-50 p-4 mb-2">
+            <p> <i class="fas fa-info-circle mr-2"></i> This is a info alert </p>
           </div>
-          <div class="code-snippet-display">
-            <code>
+          <div class="alert error d-flex align-center w-50 p-4 mb-2">
+            <p><i class="fas fa-times-circle mr-2"></i> This is a error alert </p>
+          </div>
+          <div class="alert warning d-flex align-center w-50 p-4 mb-2">
+            <p><i class="fas fa-exclamation-triangle mr-2"></i>This is a warning alert </p>
+          </div>
+        </div>
+      </section>
+      <section id="Avatar">
+        <h4 class="mb-3">Avatar</h4>
+        <p class="mb-5">Avatar can be used to show user's profile picture on profile information page,
+          on navigation bar, in blogs grid items.
+        </p>
+        <h6 class="mt-5 mb-3"> Examples of different Avatar: </h6>
+        <p class="mb-3"> It can be used with 4 variants : avatar-lg-size | avatar-md-size | avatar-sm-size | avatar-text
+        </p>
+        <div class="component-display-wrapper">
+          <div class="avatar avatar-lg-size mx-2">
+            <img src="https://image-dock-uploads-be.s3.ap-south-1.amazonaws.com/image.2022-01-29T18%3A45%3A22.573Z"
+              alt="avatar" class="img-responsive img-round" loading="lazy" />
+          </div>
+          <div class="avatar avatar-lg-size avatar-text avatar-round mx-2">
+            SR
+          </div>
+          <div class="avatar avatar-md-size mx-2">
+            <img src="https://image-dock-uploads-be.s3.ap-south-1.amazonaws.com/image.2022-01-29T18%3A49%3A51.418Z"
+              alt="avatar" class="img-responsive img-round" loading="lazy" />
+          </div>
+          <div class="avatar avatar-md-size avatar-text avatar-round mx-2">
+            SG
+          </div>
+          <div class="avatar avatar-sm-size mx-2">
+            <img src="https://image-dock-uploads-be.s3.ap-south-1.amazonaws.com/image.2022-01-29T18%3A51%3A31.435Z"
+              alt="avatar" class="img-responsive img-round" loading="lazy" />
+          </div>
+          <div class="avatar avatar-sm-size avatar-text avatar-round mx-2">
+            AB
+          </div>
+        </div>
+        <div class="code-snippet-display">
+          <code>
               <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=876&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-lg-size%2520mx-2%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fcdn.pixabay.com%252Fphoto%252F2021%252F03%252F31%252F03%252F12%252Fcat-6138366_1280.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2520img-round%2522%250A%2520%2520%2520%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-lg-size%2520avatar-text%2520avatar-round%2520mx-2%2522%253E%250A%2520%2520%2520SR%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md-size%2520mx-2%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fcdn.pixabay.com%252Fphoto%252F2021%252F03%252F31%252F03%252F12%252Fcat-6138366_1280.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2520img-round%2522%250A%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md-size%2520avatar-text%2520avatar-round%2520mx-2%2522%253E%250A%2509SG%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm-size%2520mx-2%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fcdn.pixabay.com%252Fphoto%252F2021%252F03%252F31%252F03%252F12%252Fcat-6138366_1280.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2520img-round%2522%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm-size%2520avatar-text%2520avatar-round%2520mx-2%2522%253E%250A%2520%2520%2520%2520%2520%2520AB%250A%253C%252Fdiv%253E"
                       style="width: 100%; height: auto; border:0; transform: scale(1); overflow:hidden;"
                       sandbox="allow-scripts allow-same-origin">
               </iframe>
             </code>
-          </div>
-        </section>
-        <section id="Badge">
-          <h4 class="mb-3">Badge</h4>
-          <p class="mb-5">Badges are being used to display a notification count or status information.
-          </p>
-          <h6 class="mt-5 mb-3"> Examples of different Badges: </h6>
-          <p class="mb-3"> It can be used with 4 variants : online | offline | dnd | status
-          </p>
-          <div class="component-display-wrapper">
-            <div class="badge-wrapper">
-              <div class="avatar avatar-lg-size mx-2">
-                <img
-                  src="https://image-dock-uploads-be.s3.ap-south-1.amazonaws.com/image.2022-01-29T18%3A45%3A22.573Z"
-                  alt="avatar"
-                  class="img-responsive img-round"
-                  loading="lazy"
-                />
-                <span class="badge-status-wrapper status-dnd"></span>
-              </div>
-            </div>
-            <div class="badge-wrapper">
-              <div class="avatar avatar-sm-size mx-2">
-                <img
-                  src="https://image-dock-uploads-be.s3.ap-south-1.amazonaws.com/image.2022-01-29T18%3A49%3A51.418Z"
-                  alt="avatar"
-                  class="img-responsive img-round"
-                  loading="lazy"
-                />
-                <span class="badge-status-wrapper status-available"></span>
-              </div>
-            </div>
-            <div class="badge-wrapper">
-              <div class="avatar avatar-md-size mx-2">
-                <img
-                  src="https://image-dock-uploads-be.s3.ap-south-1.amazonaws.com/image.2022-01-29T18%3A51%3A31.435Z"
-                  alt="avatar"
-                  class="img-responsive img-round"
-                  loading="lazy"
-                />
-                <span class="badge-status-wrapper status-away"></span>
-              </div>
-            </div>
-            <div class="badge-wrapper">
-              <button class="btn btn-icon-primary">
-                <i class="fas fa-home"></i>
-                <span class="badge-status-wrapper status-badge-number">5</span>
-              </button>
+        </div>
+      </section>
+      <section id="Badge">
+        <h4 class="mb-3">Badge</h4>
+        <p class="mb-5">Badges are being used to display a notification count or status information.
+        </p>
+        <h6 class="mt-5 mb-3"> Examples of different Badges: </h6>
+        <p class="mb-3"> It can be used with 4 variants : online | offline | dnd | status
+        </p>
+        <div class="component-display-wrapper">
+          <div class="badge-wrapper">
+            <div class="avatar avatar-lg-size mx-2">
+              <img src="https://image-dock-uploads-be.s3.ap-south-1.amazonaws.com/image.2022-01-29T18%3A45%3A22.573Z"
+                alt="avatar" class="img-responsive img-round" loading="lazy" />
+              <span class="badge-status-wrapper status-dnd"></span>
             </div>
           </div>
-          <div class="code-snippet-display">
-            <code>
+          <div class="badge-wrapper">
+            <div class="avatar avatar-sm-size mx-2">
+              <img src="https://image-dock-uploads-be.s3.ap-south-1.amazonaws.com/image.2022-01-29T18%3A49%3A51.418Z"
+                alt="avatar" class="img-responsive img-round" loading="lazy" />
+              <span class="badge-status-wrapper status-available"></span>
+            </div>
+          </div>
+          <div class="badge-wrapper">
+            <div class="avatar avatar-md-size mx-2">
+              <img src="https://image-dock-uploads-be.s3.ap-south-1.amazonaws.com/image.2022-01-29T18%3A51%3A31.435Z"
+                alt="avatar" class="img-responsive img-round" loading="lazy" />
+              <span class="badge-status-wrapper status-away"></span>
+            </div>
+          </div>
+          <div class="badge-wrapper">
+            <button class="btn btn-icon-primary">
+              <i class="fas fa-home"></i>
+              <span class="badge-status-wrapper status-badge-number">5</span>
+            </button>
+          </div>
+        </div>
+        <div class="code-snippet-display">
+          <code>
               <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=876&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge-wrapper%2522%253E%250A%2509%253Cdiv%2520class%253D%2522avatar%2520avatar-lg-size%2520mx-2%2522%253E%250A%2509%2509%253Cimg%2520src%253D%2522https%253A%252F%252Fimage-dock-uploads-be.s3.ap-south-1.amazonaws.com%252Fimage.2022-01-29T18%25253A45%25253A22.573Z%2522%250A%2509%2509%2509alt%253D%2522avatar%2522%250A%2509%2509%2509class%253D%2522img-responsive%2520img-round%2522%250A%2509%2509%252F%253E%250A%2509%2509%253Cspan%2520class%253D%2522badge-status-wrapper%2520status-dnd%2522%253E%253C%252Fspan%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-wrapper%2522%253E%250A%2509%253Cdiv%2520class%253D%2522avatar%2520avatar-sm-size%2520mx-2%2522%253E%250A%2509%2509%253Cimg%2520src%253D%2522https%253A%252F%252Fimage-dock-uploads-be.s3.ap-south-1.amazonaws.com%252Fimage.2022-01-29T18%25253A49%25253A51.418Z%2522%250A%2509%2509%2509alt%253D%2522avatar%2522%250A%2509%2509%2509class%253D%2522img-responsive%2520img-round%2522%250A%2509%2509%252F%253E%250A%2509%2509%253Cspan%2520class%253D%2522badge-status-wrapper%2520status-available%2522%253E%253C%252Fspan%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-wrapper%2522%253E%250A%2509%253Cdiv%2520class%253D%2522avatar%2520avatar-md-size%2520mx-2%2522%253E%250A%2509%2509%253Cimg%2520src%253D%2522https%253A%252F%252Fimage-dock-uploads-be.s3.ap-south-1.amazonaws.com%252Fimage.2022-01-29T18%25253A51%25253A31.435Z%2522%250A%2509%2509%2509%2520alt%253D%2522avatar%2522%250A%2509%2509%2509%2520class%253D%2522img-responsive%2520img-round%2522%250A%2509%2509%252F%253E%250A%2509%2509%253Cspan%2520class%253D%2522badge-status-wrapper%2520status-away%2522%253E%253C%252Fspan%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-wrapper%2522%253E%250A%2509%253Cbutton%2520class%253D%2522btn%2520btn-icon-primary%2522%253E%250A%2509%2509%253Ci%2520class%253D%2522fas%2520fa-home%2522%253E%253C%252Fi%253E%250A%2509%2509%253Cspan%2520class%253D%2522badge-status-wrapper%2520status-badge-number%2522%253E5%253C%252Fspan%253E%250A%2509%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
                       style="width: 100%; height: auto; border:0; transform: scale(1); overflow:hidden;"
                       sandbox="allow-scripts allow-same-origin">
               </iframe>
             </code>
-          </div>
-        </section>
-        <section id="Button" >
-          <h4 class="mb-3">Buttons</h4>
-          <p class="mb-5">Buttons are also called as call to action. We have range of buttons and their states. You may use a tag or button element, you need to add respective classes, and you are good to go.</p>
-          <h6 class="mt-5 mb-3"> Examples of different Primary Buttons: </h6>
-          <p class="mb-3"> It can be used with 4 variants : btn-solid-primary | btn-outline-primary | btn-icon-primary | link-text-primary
-          </p>
-          <div class="component-display-wrapper">
-            <a class="btn btn-solid-primary m-2">Primary Solid Button</a>  
-            <a class="btn btn-outline-primary m-2">Primary Outline Button</a>
-            <a class="btn btn-icon-primary m-2"><i class="fas fa-shopping-cart"></i></a>
-            <a class="btn btn-solid-primary m-2"><i class="fas fa-shopping-cart mr-2"></i>Add to Cart</a>  
-            <a class="btn link-text-primary m-2">Primary Text</a>
-          </div>
-          <div class="code-snippet-display">
-            <code>
+        </div>
+      </section>
+      <section id="Button">
+        <h4 class="mb-3">Buttons</h4>
+        <p class="mb-5">Buttons are also called as call to action. We have range of buttons and their states. You may
+          use a tag or button element, you need to add respective classes, and you are good to go.</p>
+        <h6 class="mt-5 mb-3"> Examples of different Primary Buttons: </h6>
+        <p class="mb-3"> It can be used with 4 variants : btn-solid-primary | btn-outline-primary | btn-icon-primary |
+          link-text-primary
+        </p>
+        <div class="component-display-wrapper">
+          <a class="btn btn-solid-primary m-2">Primary Solid Button</a>
+          <a class="btn btn-outline-primary m-2">Primary Outline Button</a>
+          <a class="btn btn-icon-primary m-2"><i class="fas fa-shopping-cart"></i></a>
+          <a class="btn btn-solid-primary m-2"><i class="fas fa-shopping-cart mr-2"></i>Add to Cart</a>
+          <a class="btn link-text-primary m-2">Primary Text</a>
+        </div>
+        <div class="code-snippet-display">
+          <code>
               <iframe
                 src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=876&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ca%2520class%253D%2522btn%2520btn-solid-primary%2520m-2%2522%253EPrimary%2520Solid%2520Button%253C%252Fa%253E%2520%2520%250A%253Ca%2520class%253D%2522btn%2520btn-outline-primary%2520m-2%2522%253EPrimary%2520Outline%2520Button%253C%252Fa%253E%250A%253Ca%2520class%253D%2522btn%2520btn-icon-primary%2522%253E%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%253C%252Fa%253E%250A%253Ca%2520class%253D%2522btn%2520btn-solid-primary%2520m-2%2522%253E%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2520mr-2%2522%253E%253C%252Fi%253EAdd%2520to%2520Cart%253C%252Fa%253E%2520%2520%250A%253Ca%2520class%253D%2522btn%2520link-text-primary%2522%253EPrimary%2520Text%253C%252Fa%253E"
                 style="width: 100%; height: auto; border:0; transform: scale(1); overflow:hidden;"
                 sandbox="allow-scripts allow-same-origin">
               </iframe>
             </code>
-          </div>
-          <h6 class="mt-5 mb-3"> Examples of different Secondary Buttons: </h6>
-          <p class="mb-3"> It can be used with 4 variants : btn-solid-secondary | btn-outline-secondary | btn-icon-secondary | link-text-secondary
-          </p>
-          <div class="component-display-wrapper">
-            <a class="btn btn-solid-secondary m-2">Secondary Solid Button</a>  
-            <a class="btn btn-outline-secondary m-2">Secondary Outline Button</a>
-            <a class="btn btn-icon-secondary"><i class="fas fa-shopping-cart"></i></a>
-            <a class="btn btn-solid-secondary m-2"><i class="fas fa-shopping-cart mr-2"></i>Add to Cart</a>  
-            <a class="btn link-text-secondary">Secondary Text</a>
-          </div>
-          <div class="code-snippet-display">
-            <code>
+        </div>
+        <h6 class="mt-5 mb-3"> Examples of different Secondary Buttons: </h6>
+        <p class="mb-3"> It can be used with 4 variants : btn-solid-secondary | btn-outline-secondary |
+          btn-icon-secondary | link-text-secondary
+        </p>
+        <div class="component-display-wrapper">
+          <a class="btn btn-solid-secondary m-2">Secondary Solid Button</a>
+          <a class="btn btn-outline-secondary m-2">Secondary Outline Button</a>
+          <a class="btn btn-icon-secondary"><i class="fas fa-shopping-cart"></i></a>
+          <a class="btn btn-solid-secondary m-2"><i class="fas fa-shopping-cart mr-2"></i>Add to Cart</a>
+          <a class="btn link-text-secondary">Secondary Text</a>
+        </div>
+        <div class="code-snippet-display">
+          <code>
               <iframe
                 src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=876&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ca%2520class%253D%2522btn%2520btn-solid-secondary%2520m-2%2522%253ESecondary%2520Solid%2520Button%253C%252Fa%253E%2520%2520%250A%253Ca%2520class%253D%2522btn%2520btn-outline-secondary%2520m-2%2522%253ESecondary%2520Outline%2520Button%253C%252Fa%253E%250A%253Ca%2520class%253D%2522btn%2520btn-icon-secondary%2522%253E%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%253C%252Fa%253E%250A%253Ca%2520class%253D%2522btn%2520btn-solid-secondary%2520m-2%2522%253E%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2520mr-2%2522%253E%253C%252Fi%253EAdd%2520to%2520Cart%253C%252Fa%253E%2520%2520%250A%253Ca%2520class%253D%2522btn%2520link-text-secondary%2522%253ESecondary%2520Text%253C%252Fa%253E"
                 style="width: 100%; height: auto; border:0; transform: scale(1); overflow:hidden;"
                 sandbox="allow-scripts allow-same-origin">
               </iframe>
             </code>
-          </div>
-          <h6 class="mt-5 mb-3"> Examples of Disabled Buttons: </h6>
-          <p class="mb-3"> If you want to style disabled button add <span class="text-primary-color text-bold"> btn-disabled </span> class and you are good to go.
-          </p>
-          <div class="component-display-wrapper">
-            <a class="btn btn-solid-primary m-2 btn-disabled">Primary Solid Button</a> 
-            <a class="btn btn-solid-secondary m-2 btn-disabled">Secondary Solid Button</a>  
-          </div>
-          <div class="code-snippet-display">
-            <code>
+        </div>
+        <h6 class="mt-5 mb-3"> Examples of Disabled Buttons: </h6>
+        <p class="mb-3"> If you want to style disabled button add <span class="text-primary-color text-bold">
+            btn-disabled </span> class and you are good to go.
+        </p>
+        <div class="component-display-wrapper">
+          <a class="btn btn-solid-primary m-2 btn-disabled">Primary Solid Button</a>
+          <a class="btn btn-solid-secondary m-2 btn-disabled">Secondary Solid Button</a>
+        </div>
+        <div class="code-snippet-display">
+          <code>
               <iframe
               src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=876&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ca%2520class%253D%2522btn%2520btn-solid-primary%2520m-2%2520btn-disabled%2522%253EPrimary%2520Solid%2520Button%253C%252Fa%253E%2520%250A%253Ca%2520class%253D%2522btn%2520btn-solid-secondary%2520m-2%2520btn-disabled%2522%253ESecondary%2520Solid%2520Button%253C%252Fa%253E%2520"
               style="width: 100%; height: auto; border:0; transform: scale(1); overflow:hidden;"
               sandbox="allow-scripts allow-same-origin">
             </iframe>
             </code>
-          </div>
-          <h6 class="mt-5 mb-3"> Examples of Buttons with differnet sizes: </h6>
-          <p class="mb-3"> It can be used with 2 variants : btn-lg | btn-sm
-          </p>
-          <div class="component-display-wrapper">
-            <a class="btn btn-solid-primary m-2 btn-lg">Primary Solid Large Button</a> 
-            <a class="btn btn-solid-primary m-2">Primary Solid Medium Button</a> 
-            <a class="btn btn-solid-primary m-2 btn-sm">Primary Solid Small Button</a> 
-          </div>
-          <div class="code-snippet-display">
-            <code>
+        </div>
+        <h6 class="mt-5 mb-3"> Examples of Buttons with differnet sizes: </h6>
+        <p class="mb-3"> It can be used with 2 variants : btn-lg | btn-sm
+        </p>
+        <div class="component-display-wrapper">
+          <a class="btn btn-solid-primary m-2 btn-lg">Primary Solid Large Button</a>
+          <a class="btn btn-solid-primary m-2">Primary Solid Medium Button</a>
+          <a class="btn btn-solid-primary m-2 btn-sm">Primary Solid Small Button</a>
+        </div>
+        <div class="code-snippet-display">
+          <code>
               <iframe
                 src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=876&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ca%2520class%253D%2522btn%2520btn-solid-primary%2520m-2%2520btn-lg-size%2522%253EPrimary%2520Solid%2520Large%2520Button%253C%252Fa%253E%2520%250A%253Ca%2520class%253D%2522btn%2520btn-solid-primary%2520m-2%2522%253EPrimary%2520Solid%2520Medium%2520Button%253C%252Fa%253E%2520%250A%253Ca%2520class%253D%2522btn%2520btn-solid-primary%2520m-2%2520btn-sm-size%2522%253EPrimary%2520Solid%2520Small%2520Button%253C%252Fa%253E%2520"
                 style="width: 100%; height: auto; border:0; transform: scale(1); overflow:hidden;"
                 sandbox="allow-scripts allow-same-origin">
               </iframe>
             </code>
-          </div>
-          <h6 class="mt-5 mb-3"> Examples of Toggle and Bloat Buttons: </h6>
-          </p>
-          <div class="component-display-wrapper">
-            <a class="btn btn-float m-4"><i class="fas fa-arrow-up"></i></a>  
-            <label class="btn-toggle m-4"><input class="btn-checkbox" type="checkbox">
-              <span class="btn-slider"></span>
-            </label>
-          </div>
-          <div class="code-snippet-display">
-            <code>
+        </div>
+        <h6 class="mt-5 mb-3"> Examples of Toggle and Bloat Buttons: </h6>
+        </p>
+        <div class="component-display-wrapper">
+          <a class="btn btn-float m-4"><i class="fas fa-arrow-up"></i></a>
+          <label class="btn-toggle m-4"><input class="btn-checkbox" type="checkbox">
+            <span class="btn-slider"></span>
+          </label>
+        </div>
+        <div class="code-snippet-display">
+          <code>
               <iframe
                 src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=876&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ca%2520class%253D%2522btn%2520btn-float%2520m-4%2522%253E%253Ci%2520class%253D%2522fas%2520fa-arrow-up%2522%253E%253C%252Fi%253E%253C%252Fa%253E%2520%2520%250A%253Clabel%2520class%253D%2522btn-toggle%2520m-4%2522%253E%253Cinput%2520class%253D%2522btn-checkbox%2522%2520type%253D%2522checkbox%2522%253E%250A%2509%253Cspan%2520class%253D%2522btn-slider%2522%253E%253C%252Fspan%253E%250A%253C%252Flabel%253E"
                 style="width: 100%; height: auto; border:0; transform: scale(1); overflow:hidden;"
                 sandbox="allow-scripts allow-same-origin">
               </iframe>
             </code>
-          </div>
-        </section>
-        <section id="Image" >
-          <h4 class="mb-3">Images</h4>
-          <h6 class="mt-5 mb-3"> Example of Responsive Image: </h6>
-          <div class="component-display-wrapper">
-            <img loading="lazy" 
-                 class="img-responsive" 
-                 src="https://cdn.pixabay.com/photo/2019/08/07/14/11/dog-4390885_1280.jpg" 
-                 alt="cute-dog"
-            />
-          </div>
-          <div class="code-snippet-display">
-            <code>
+        </div>
+      </section>
+      <section id="Image">
+        <h4 class="mb-3">Images</h4>
+        <h6 class="mt-5 mb-3"> Example of Responsive Image: </h6>
+        <div class="component-display-wrapper">
+          <img loading="lazy" class="img-responsive"
+            src="https://cdn.pixabay.com/photo/2019/08/07/14/11/dog-4390885_1280.jpg" alt="cute-dog" />
+        </div>
+        <div class="code-snippet-display">
+          <code>
               <iframe
                 src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=876&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520loading%253D%2522lazy%2522%2520%250A%2520%2520%2520%2520%2520class%253D%2522img-responsive%2522%2520%250A%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fcdn.pixabay.com%252Fphoto%252F2019%252F08%252F07%252F14%252F11%252Fdog-4390885_1280.jpg%2522%2520%250A%2520%2520%2520%2520%2520alt%253D%2522cute-dog%2522%2520%250A%252F%253E"
                 style="width: 100%; height: auto; border:0; transform: scale(1); overflow:hidden;"
                 sandbox="allow-scripts allow-same-origin">
               </iframe>
             </code>
-          </div>
-          <h6 class="mt-5 mb-3"> Examples of different Images: </h6>
-          <p class="mb-3"> It can be used with 2 variants : img-round | img-square
-          </p>
-          <div class="component-display-wrapper">
-            <img loading="lazy" 
-                 class="img-responsive img-round image-dummy-size p-3" 
-                 src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794__480.jpg" 
-                 alt="cute-dog"
-            />
+        </div>
+        <h6 class="mt-5 mb-3"> Examples of different Images: </h6>
+        <p class="mb-3"> It can be used with 2 variants : img-round | img-square
+        </p>
+        <div class="component-display-wrapper">
+          <img loading="lazy" class="img-responsive img-round image-dummy-size p-3"
+            src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794__480.jpg" alt="cute-dog" />
 
-            <img loading="lazy" 
-                 class="img-responsive img-square image-dummy-size p-3" 
-                 src="https://cdn.pixabay.com/photo/2021/01/21/16/17/english-cocker-spaniel-5937757__480.jpg" 
-                 alt="cute-dog"
-            />
-          </div>
-        </section>
-        <section id="Cards">
-          <h4 class="mb-3">Cards</h4>
-          <h6 class="mt-5 mb-3"> Example of Basic Card:</h6>
-          <div class="component-display-wrapper">
-            <div class="card">
-              <div class="card-body p-4">
-                <div class="card-title mb-2">
-                  Jacket
-                </div>
-                <div class="card-content">
-                  An outer garment extending either to the waist or the hips, typically having sleeves and a fastening down the front.
-                </div>
+          <img loading="lazy" class="img-responsive img-square image-dummy-size p-3"
+            src="https://cdn.pixabay.com/photo/2021/01/21/16/17/english-cocker-spaniel-5937757__480.jpg"
+            alt="cute-dog" />
+        </div>
+      </section>
+      <section id="Cards">
+        <h4 class="mb-3">Cards</h4>
+        <h6 class="mt-5 mb-3"> Example of Basic Card:</h6>
+        <div class="component-display-wrapper">
+          <div class="card">
+            <div class="card-body p-4">
+              <div class="card-title mb-2">
+                Jacket
               </div>
-              <button class="btn btn-solid-primary w-100">
-                Learn More
-              </button>
+              <div class="card-content">
+                An outer garment extending either to the waist or the hips, typically having sleeves and a fastening
+                down the front.
+              </div>
             </div>
+            <button class="btn btn-solid-primary w-100">
+              Learn More
+            </button>
           </div>
-          <h6 class="mt-5 mb-3"> Example of Image Card:</h6>
-          <div class="component-display-wrapper">
-            <div class="card m-4">
-              <div>
-                <img src="https://rukminim1.flixcart.com/image/540/648/ksyz8280/jacket/p/8/9/38-no-226779501-only-original-imag6fyzqzg3h5ps.jpeg?q=50"
-                    alt="jacket"
-                    class="img-responsive img-square"
-                />    
-              </div>
-              <div class="card-body p-4">
-                <div class="card-title mb-2 text-center">
-                  Jacket
-                </div>
-                
-                <div class="card-title mb-2 text-center">
-                  Rs. 3,000
-                </div>
-                
-              </div>
-              <button class="btn btn-solid-primary w-100">
-                Add to cart
-              </button>
+        </div>
+        <h6 class="mt-5 mb-3"> Example of Image Card:</h6>
+        <div class="component-display-wrapper">
+          <div class="card m-4">
+            <div>
+              <img
+                src="https://rukminim1.flixcart.com/image/540/648/ksyz8280/jacket/p/8/9/38-no-226779501-only-original-imag6fyzqzg3h5ps.jpeg?q=50"
+                alt="jacket" class="img-responsive img-square" />
             </div>
+            <div class="card-body p-4">
+              <div class="card-title mb-2 text-center">
+                Jacket
+              </div>
+
+              <div class="card-title mb-2 text-center">
+                Rs. 3,000
+              </div>
+
+            </div>
+            <button class="btn btn-solid-primary w-100">
+              Add to cart
+            </button>
           </div>
-          <h6 class="mt-5 mb-3"> Example of E-Commerce Card:</h6>
-          <div class="component-display-wrapper">
-            <div class="card m-4">
+        </div>
+        <h6 class="mt-5 mb-3"> Example of E-Commerce Card:</h6>
+        <div class="component-display-wrapper">
+          <div class="card m-4">
+            <span class="card-badge">New</span>
+            <div>
+              <img
+                src="https://rukminim1.flixcart.com/image/540/648/ksyz8280/jacket/p/8/9/38-no-226779501-only-original-imag6fyzqzg3h5ps.jpeg?q=50"
+                alt="jacket" class="img-responsive img-square" />
+            </div>
+            <div class="card-body p-4">
+              <div class="card-title mb-2 text-center">
+                Jacket
+              </div>
+
+              <div class="card-title mb-2 text-center">
+                Rs. 3,000
+              </div>
+
+            </div>
+            <button class="btn btn-solid-primary w-100">
+              Add to cart
+            </button>
+          </div>
+          <div class="card m-4">
+            <span class="card-badge-right"><i class="far fa-heart"></i></span>
+            <div>
+              <img
+                src="https://rukminim1.flixcart.com/image/540/648/ksyz8280/jacket/p/8/9/38-no-226779501-only-original-imag6fyzqzg3h5ps.jpeg?q=50"
+                alt="jacket" class="img-responsive img-square" />
+            </div>
+            <div class="card-body p-4">
+              <div class="card-title mb-2 text-center">
+                Jacket
+              </div>
+
+              <div class="card-title mb-2 text-center">
+                Rs. 3,000 <span class="ecom-original-price px-2"> Rs. 999 </span> <span class="ecom-discount"> (10% OFF)
+                </span>
+              </div>
+
+            </div>
+            <button class="btn btn-solid-primary w-100">
+              Add to cart
+            </button>
+          </div>
+          <div class="card m-4">
+            <span class="card-badge-right"><i class="fas fa-times"></i></span>
+            <div>
+              <img
+                src="https://rukminim1.flixcart.com/image/540/648/ksyz8280/jacket/p/8/9/38-no-226779501-only-original-imag6fyzqzg3h5ps.jpeg?q=50"
+                alt="jacket" class="img-responsive img-square" />
+            </div>
+            <div class="card-body p-4">
+              <div class="card-title mb-2 text-center">
+                Jacket
+              </div>
+
+              <div class="card-title mb-2 text-center">
+                Rs. 3,000 <span class="ecom-original-price px-2"> Rs. 999 </span> <span class="ecom-discount"> (10% OFF)
+                </span>
+              </div>
+
+            </div>
+            <button class="btn btn-solid-primary w-100">
+              Add to cart
+            </button>
+          </div>
+        </div>
+        <h6 class="mt-5 mb-3"> Example of Card with Text Overlay</h6>
+        <div class="component-display-wrapper">
+          <div class="card m-4">
+            <div class="overlay-container">
+              <div class="overlay-text">
+                <div class="text-container w-100 text-center text-bold p-3">Out Of Stock</div>
+              </div>
               <span class="card-badge">New</span>
               <div>
-                <img src="https://rukminim1.flixcart.com/image/540/648/ksyz8280/jacket/p/8/9/38-no-226779501-only-original-imag6fyzqzg3h5ps.jpeg?q=50"
-                    alt="jacket"
-                    class="img-responsive img-square"
-                />    
+                <img
+                  src="https://rukminim1.flixcart.com/image/540/648/ksyz8280/jacket/p/8/9/38-no-226779501-only-original-imag6fyzqzg3h5ps.jpeg?q=50"
+                  alt="jacket" class="img-responsive img-square" />
               </div>
               <div class="card-body p-4">
                 <div class="card-title mb-2 text-center">
                   Jacket
                 </div>
-                
+
                 <div class="card-title mb-2 text-center">
                   Rs. 3,000
                 </div>
-                
-              </div>
-              <button class="btn btn-solid-primary w-100">
-                Add to cart
-              </button>
-            </div>
-            <div class="card m-4">
-              <span class="card-badge-right"><i class="far fa-heart"></i></span>
-              <div>
-                <img src="https://rukminim1.flixcart.com/image/540/648/ksyz8280/jacket/p/8/9/38-no-226779501-only-original-imag6fyzqzg3h5ps.jpeg?q=50"
-                    alt="jacket"
-                    class="img-responsive img-square"
-                />    
-              </div>
-              <div class="card-body p-4">
-                <div class="card-title mb-2 text-center">
-                  Jacket
-                </div>
-                
-                <div class="card-title mb-2 text-center">
-                  Rs. 3,000 <span class="ecom-original-price px-2"> Rs. 999 </span> <span class="ecom-discount"> (10% OFF) </span>
-                </div>
-                
-              </div>
-              <button class="btn btn-solid-primary w-100">
-                Add to cart
-              </button>
-            </div>
-            <div class="card m-4">
-              <span class="card-badge-right"><i class="fas fa-times"></i></span>
-              <div>
-                <img src="https://rukminim1.flixcart.com/image/540/648/ksyz8280/jacket/p/8/9/38-no-226779501-only-original-imag6fyzqzg3h5ps.jpeg?q=50"
-                    alt="jacket"
-                    class="img-responsive img-square"
-                />    
-              </div>
-              <div class="card-body p-4">
-                <div class="card-title mb-2 text-center">
-                  Jacket
-                </div>
-                
-                <div class="card-title mb-2 text-center">
-                  Rs. 3,000 <span class="ecom-original-price px-2"> Rs. 999 </span> <span class="ecom-discount"> (10% OFF) </span>
-                </div>
-                
+
               </div>
               <button class="btn btn-solid-primary w-100">
                 Add to cart
               </button>
             </div>
           </div>
-          <h6 class="mt-5 mb-3"> Example of Card with Text Overlay</h6>
-          <div class="component-display-wrapper">
-            <div class="card m-4">
-              <div class="overlay-container">
-                <div class="overlay-text">
-                  <div class="text-container w-100 text-center text-bold p-3">Out Of Stock</div>
+        </div>
+        <h6 class="mt-5 mb-3"> Example of Social Media Card</h6>
+        <div class="component-display-wrapper">
+          <div class="card m-4">
+            <div class="card-header p-4">
+              <div class="d-flex align-center">
+                <img src="https://image-dock-uploads-be.s3.ap-south-1.amazonaws.com/image.2022-01-29T18%3A51%3A31.435Z"
+                  alt="avatar" class="img-responsive img-round avatar-sm-size avatar " loading="lazy" />
+                <span class="px-2"> Smile Gupta </span>
               </div>
-                <span class="card-badge">New</span>
-                <div>
-                  <img src="https://rukminim1.flixcart.com/image/540/648/ksyz8280/jacket/p/8/9/38-no-226779501-only-original-imag6fyzqzg3h5ps.jpeg?q=50"
-                      alt="jacket"
-                      class="img-responsive img-square"
-                  />    
-                </div>
-                <div class="card-body p-4">
-                  <div class="card-title mb-2 text-center">
-                    Jacket
-                  </div>
-                  
-                  <div class="card-title mb-2 text-center">
-                    Rs. 3,000
-                  </div>
-                  
-                </div>
-                <button class="btn btn-solid-primary w-100">
-                  Add to cart
-                </button>
+            </div>
+            <div class="card-image">
+              <img
+                src="https://rukminim1.flixcart.com/image/540/648/ksyz8280/jacket/p/8/9/38-no-226779501-only-original-imag6fyzqzg3h5ps.jpeg?q=50"
+                alt="jacket" class="img-responsive img-square" />
+            </div>
+            <div class="card-body p-4">
+              <div class="card-content mb-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, inventore nisi. Dolore quo quas
+                illo sed ullam labore totam sint.
               </div>
             </div>
           </div>
-          <h6 class="mt-5 mb-3"> Example of Social Media Card</h6>
-          <div class="component-display-wrapper">
-            <div class="card m-4">
-              <div class="card-header p-4">
-                <div class="d-flex align-center">
-                  <img
-                    src="https://image-dock-uploads-be.s3.ap-south-1.amazonaws.com/image.2022-01-29T18%3A51%3A31.435Z"
-                    alt="avatar"
-                    class="img-responsive img-round avatar-sm-size avatar "
-                    loading="lazy"
-                  />
-                  <span class="px-2"> Smile Gupta </span>
-                </div>
+        </div>
+        <h6 class="mt-5 mb-3"> Example of Horizontal Card</h6>
+        <div class="component-display-wrapper">
+          <div class="card card-horizontal m-4">
+            <div class="card-image-wrapper">
+              <img
+                src="https://rukminim1.flixcart.com/image/540/648/ksyz8280/jacket/p/8/9/38-no-226779501-only-original-imag6fyzqzg3h5ps.jpeg?q=50"
+                alt="jacket" class="img-responsive img-square" />
+            </div>
+            <div class="card-body p-4">
+              <div class="card-title mb-2">
+                Jacket
               </div>
-              <div class="card-image">
-                <img src="https://rukminim1.flixcart.com/image/540/648/ksyz8280/jacket/p/8/9/38-no-226779501-only-original-imag6fyzqzg3h5ps.jpeg?q=50"
-                    alt="jacket"
-                    class="img-responsive img-square"
-                />    
+              <div class="card-title mb-2">
+                Rs. 3,000 <span class="ecom-original-price px-2"> Rs. 999 </span> <span class="ecom-discount"> (10% OFF)
+                </span>
               </div>
-              <div class="card-body p-4">
-                <div class="card-content mb-2">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, inventore nisi. Dolore quo quas illo sed ullam labore totam sint.
-                </div>
+              <div class="card-content mb-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, inventore nisi. Dolore quo quas
+                illo sed ullam labore totam sint.
               </div>
+              <button class="btn btn-solid-primary my-2">
+                Add to cart
+              </button>
+              <button class="btn btn-outline-primary my-2">
+                Add to wishlist
+              </button>
             </div>
           </div>
-          <h6 class="mt-5 mb-3"> Example of Horizontal Card</h6>
-          <div class="component-display-wrapper">
-            <div class="card card-horizontal m-4">
-              <div class="card-image-wrapper">
-                <img src="https://rukminim1.flixcart.com/image/540/648/ksyz8280/jacket/p/8/9/38-no-226779501-only-original-imag6fyzqzg3h5ps.jpeg?q=50"
-                    alt="jacket"
-                    class="img-responsive img-square"
-                />    
-              </div>
-              <div class="card-body p-4">
-                <div class="card-title mb-2">
-                  Jacket
-                </div>
-                <div class="card-title mb-2">
-                  Rs. 3,000 <span class="ecom-original-price px-2"> Rs. 999 </span> <span class="ecom-discount"> (10% OFF) </span>
-                </div>
-                <div class="card-content mb-2">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, inventore nisi. Dolore quo quas illo sed ullam labore totam sint.
-                </div>
-                <button class="btn btn-solid-primary my-2">
-                  Add to cart
-                </button>
-                <button class="btn btn-outline-primary my-2">
-                  Add to wishlist
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="Slider" >
-          <h4 class="mb-3">Slider</h4>
-          <h6 class="mt-5 mb-3"> Example of Slider: </h6>
-          <div class="component-display-wrapper">
-            <input type="range" class="slider" 
-              min="0" max="10" step="2" />
-          </div>
-          <div class="code-snippet-display">
-            <code>
+        </div>
+      </section>
+      <section id="Slider">
+        <h4 class="mb-3">Slider</h4>
+        <h6 class="mt-5 mb-3"> Example of Slider: </h6>
+        <div class="component-display-wrapper">
+          <input type="range" class="slider" min="0" max="10" step="2" />
+        </div>
+        <div class="code-snippet-display">
+          <code>
               <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=javascript&width=496&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cinput%2520type%253D%2522range%2522%2520class%253D%2522slider%2522%2520min%253D%25220%2522%2520max%253D%252210%2522%2520step%253D%25222%2522%2520%252F%253E"
                       style="width: 100%; height: auto; border:0; transform: scale(1); overflow:hidden;"
                       sandbox="allow-scripts allow-same-origin">
               </iframe>
             </code>
-          </div>
-        </section>
-      </div>
-    </section>
-    <footer class="footer text-center">
-      <div class="footer-header mb-2">
-        Made with <span class="text-primary-color">&#9829;</span> by Smile Gupta
-      </div>
-      <div class="footer-social-handles">
-        <a href="https://github.com/smilegupta" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://twitter.com/smileguptaaa" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.linkedin.com/in/smilegupta" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-      </div>
-    </footer>
-  </body>
+        </div>
+      </section>
+      <section id="Typography">
+        <h4 class="mb-3">Typography</h4>
+        <h6 class="mt-5 mb-3">Example of Heading text </h6>
+        <p class="mb-3"> It can be used with 6 variants : h1 | h2 | h3 | h4 | h5 | h6 </p>
+        <div class="component-display-wrapper flex-column">
+          <h1>H1. This is heading</h1>
+          <h2>H2. This is heading</h2>
+          <h3>H3. This is heading</h3>
+          <h4>H4. This is heading</h4>
+          <h5>h5. This is heading</h5>
+          <h6>h6. This is heading</h6>
+        </div>
+        <h6 class="mt-5 mb-3">Example of Text with different styles </h6>
+        <div class="component-display-wrapper flex-column">
+          <p class="text-primary-color mb-2">This is primary colored text</p>
+          <p class="text-secondary-color mb-2">This is secondary colored text</p>
+          <p class="text-disabled mb-2">This is disabled text</p>
+          <p class="text-uppercase mb-2">This is uppercased text</p>
+          <p class="text-lowercase mb-2">This is lowercased text</p>
+          <p class="text-capitalise mb-2">This is capitalised text</p>
+          <p class="text-small mb-2">This is small text</p>
+          <p class="text-big mb-2">This is big text</p>
+          <p class="text-light mb-2">This is light text</p>
+          <p class="text-bold mb-2">This is bold text</p>
+          <p class="text-italic mb-2">This is italiced text</p>
+          <p class="text-underline mb-2">This is underlined text</p>
+        </div>
+      </section>
+    </div>
+  </section>
+  <footer class="footer text-center">
+    <div class="footer-header mb-2">
+      Made with <span class="text-primary-color">&#9829;</span> by Smile Gupta
+    </div>
+    <div class="footer-social-handles">
+      <a href="https://github.com/smilegupta" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://twitter.com/smileguptaaa" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/smilegupta" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </footer>
+</body>
+
 </html>

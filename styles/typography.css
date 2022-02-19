@@ -2,26 +2,32 @@
 
 h1 {
   font-size: 3rem;
+  margin-bottom: 0.5rem;
 }
 
 h2 {
   font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
 h3 {
   font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 h4 {
   font-size: 1.75rem;
+  margin-bottom: 0.5rem;
 }
 
 h5 {
   font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 h6 {
   font-size: 1.25rem;
+  margin-bottom: 0.5rem;
 }
 
 /*************** Paragraph Styles ***************/
@@ -57,11 +63,11 @@ p {
   text-transform: capitalize;
 }
 
-.small-text {
+.text-small {
   font-size: 0.875rem;
 }
 
-.big-text {
+.text-big {
   font-size: 1.125rem;
 }
 
