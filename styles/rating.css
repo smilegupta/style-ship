@@ -1,0 +1,13 @@
+.stars{
+    display: flex;
+}
+
+.rating-star-icon{
+    color: var(--primary-color);
+    cursor: pointer;
+    opacity: 50%;
+}
+
+.rating-star-icon-active{
+    opacity: 100%;
+}
