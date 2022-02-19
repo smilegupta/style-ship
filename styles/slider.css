@@ -1,7 +1,8 @@
 .slider {
 	height: 7px;
 	border-radius: 5px;
-	background: var(--primary-color);
+	background: var(--primary-bg);
+    border: 0.5px solid var(--primary-color-hover);
     -webkit-appearance: none;
 }
 
