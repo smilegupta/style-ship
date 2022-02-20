@@ -22,6 +22,14 @@
   align-items: center;
 }
 
+.align-left{
+  align-items: flex-start;
+}
+
+.align-end{
+  align-items: flex-end;
+}
+
 .justify-content-center{
   justify-content: center;
 }

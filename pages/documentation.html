@@ -17,7 +17,7 @@
   <script src="../javascript/navbar.js" defer></script>
   <script src="../javascript/sidebar.js" defer></script>
   <script src="../javascript/rating.js" defer></script>
-
+  <script src="../javascript/formvalidation.js" defer></script>
   <!-- Page Title-->
   <title>Style Ship | Documentation</title>
 </head>
@@ -89,6 +89,9 @@
         </li>
         <li class="list-non-bullet sidebar-item">
           <a class="link-no-style" href="#Cards">Cards</a>
+        </li>
+        <li class="list-non-bullet sidebar-item">
+          <a class="link-no-style" href="#Form">Form Elements</a>
         </li>
         <li class="list-non-bullet sidebar-item">
           <a class="link-no-style" href="#Image">Image</a>
@@ -529,182 +532,259 @@
           </div>
         </div>
       </section>
-      <section id="Image">
-        <h4 class="mb-3">Images</h4>
-        <h6 class="mt-5 mb-3"> Example of Responsive Image: </h6>
-        <div class="component-display-wrapper">
-          <img loading="lazy" class="img-responsive"
-            src="https://cdn.pixabay.com/photo/2019/08/07/14/11/dog-4390885_1280.jpg" alt="cute-dog" />
+      <section id="Form">
+        <h4 class="mb-3">Form Elements</h4>
+        <h6 class="mt-5 mb-3"> Example of Commonly used Input elements: </h6>
+        <div class="component-display-wrapper flex-column">
+          <div class="mb-5 w-100">
+            <p> Input Field </p>
+            <div class="input-wrapper my-5">
+              <label for="email" class="label">Email*</label>
+              <input type="email" class="input-field" required id="email" placeholder="For eg: smilegupta@gmail.com" />
+            </div>
+          </div>
+          <div class="mb-5 w-100">
+            <p> Text Area </p>
+            <div class="input-wrapper my-5">
+              <label for="description" class="label">Description*</label>
+              <textarea class="input-field" id="input-field" placeholder="Describe yourself here..." rows="4"
+                cols="50"> </textarea>
+            </div>
+          </div>
+          <div class="mb-5 w-100">
+            <p> Checkbox </p>
+            <label class="checkbox my-5">
+              <input type="checkbox" />
+              <span class="ml-2">Check Me</span>
+            </label>
+          </div>
+          <div class="mb-5 w-100">
+            <p class="mb-3"> Radio Buttons </p>
+            <div class="d-flex my-5">
+              <label class="radio-button-wrapper mx-2">One
+                <input type="radio" checked="checked" name="radio">
+                <span class="radio-button"></span>
+              </label>
+              <label class="radio-button-wrapper mx-2">Two
+                <input type="radio" name="radio">
+                <span class="radio-button"></span>
+              </label>
+            </div>
+          </div>
         </div>
         <div class="code-snippet-display">
           <code>
+              <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=javascript&width=496&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522mb-5%2520w-100%2522%253E%250A%2509%253Cp%253E%2520Input%2520Field%2520%253C%252Fp%253E%250A%2509%253Cdiv%2520class%253D%2522input-wrapper%2520my-5%2522%253E%250A%2509%2509%253Clabel%2520for%253D%2522email%2522%2520class%253D%2522label%2522%253EEmail*%253C%252Flabel%253E%250A%2509%2509%253Cinput%2520type%253D%2522email%2522%2520class%253D%2522input-field%2522%2520required%2520id%253D%2522email%2522%2520placeholder%253D%2522For%2520eg%253A%2520smilegupta%2540gmail.com%2522%2520%252F%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522mb-5%2520w-100%2522%253E%250A%2509%253Cp%253E%2520Text%2520Area%2520%253C%252Fp%253E%250A%2509%253Cdiv%2520class%253D%2522input-wrapper%2520my-5%2522%253E%250A%2509%2509%253Clabel%2520for%253D%2522description%2522%2520class%253D%2522label%2522%253EDescription*%253C%252Flabel%253E%250A%2509%2509%253Ctextarea%2520class%253D%2522input-field%2522%2520id%253D%2522input-field%2522%2520placeholder%253D%2522Describe%2520yourself%2520here...%2522%2520rows%253D%25224%2522%2520cols%253D%252250%2522%253E%2520%2509%2509%2509%253C%252Ftextarea%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522mb-5%2520w-100%2522%253E%250A%2509%253Cp%253E%2520Checkbox%2520%253C%252Fp%253E%250A%2509%253Clabel%2520class%253D%2522checkbox%2520my-5%2522%253E%250A%2509%2509%253Cinput%2520type%253D%2522checkbox%2522%2520%252F%253E%250A%2509%2509%253Cspan%2520class%253D%2522ml-2%2522%253ECheck%2520Me%253C%252Fspan%253E%250A%2509%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522mb-5%2520w-100%2522%253E%250A%2509%253Cp%2520class%253D%2522mb-3%2522%253E%2520Radio%2520Buttons%2520%253C%252Fp%253E%250A%2509%253Cdiv%2520class%253D%2522d-flex%2520my-5%2522%253E%250A%2509%2509%253Clabel%2520class%253D%2522radio-button-wrapper%2520mx-2%2522%253EOne%250A%2509%2509%2509%253Cinput%2520type%253D%2522radio%2522%2520checked%253D%2522checked%2522%2520name%253D%2522radio%2522%253E%250A%2509%2509%2509%253Cspan%2520class%253D%2522radio-button%2522%253E%253C%252Fspan%253E%250A%2509%2509%253C%252Flabel%253E%250A%2509%2509%253Clabel%2520class%253D%2522radio-button-wrapper%2520mx-2%2522%253ETwo%250A%2509%2509%2509%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522radio%2522%253E%250A%2509%2509%2509%253Cspan%2520class%253D%2522radio-button%2522%253E%253C%252Fspan%253E%250A%2509%2509%253C%252Flabel%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+              style="width: 100%; height: auto; border:0; transform: scale(1); overflow:hidden;"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+          </code>
+        </div>
+        <h6 class="mt-5 mb-3"> Form Validations Example: </h6>
+        <div class="component-display-wrapper flex-column dummy-form-container w-50">
+          <h6 class="text-left w-100 text-bold mb-2">Signup Form</h6>
+          <form class="w-50" novalidate id="submit-form-example">
+            <div class="form-element">
+              <div class="input-wrapper my-5">
+                <label for="form-validation-name" class="label">Username*</label>
+                <input type="text" class="input-field" required id="form-validation-name"
+                  placeholder="For eg: Smile Gupta" />
+                <span class="error-message"> This field is required </span>
+              </div>
+            </div>
+            <div class="form-element">
+              <div class="input-wrapper my-5">
+                <label for="form-validation-password" class="label">Password*</label>
+                <input type="password" class="input-field" required id="form-validation-password"
+                  placeholder="For eg: ******" />
+                <span class="error-message"> This field is required </span>
+              </div>
+            </div>
+            <div>
+              <div class="form-element">
+                <button class="btn btn-solid-primary"> Submit </button>
+              </div>
+          </form>
+        </div>
+    </div>
+  </section>
+  <section id="Image">
+    <h4 class="mb-3">Images</h4>
+    <h6 class="mt-5 mb-3"> Example of Responsive Image: </h6>
+    <div class="component-display-wrapper">
+      <img loading="lazy" class="img-responsive"
+        src="https://cdn.pixabay.com/photo/2019/08/07/14/11/dog-4390885_1280.jpg" alt="cute-dog" />
+    </div>
+    <div class="code-snippet-display">
+      <code>
               <iframe
                 src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=htmlmixed&width=876&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520loading%253D%2522lazy%2522%2520%250A%2520%2520%2520%2520%2520class%253D%2522img-responsive%2522%2520%250A%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fcdn.pixabay.com%252Fphoto%252F2019%252F08%252F07%252F14%252F11%252Fdog-4390885_1280.jpg%2522%2520%250A%2520%2520%2520%2520%2520alt%253D%2522cute-dog%2522%2520%250A%252F%253E"
                 style="width: 100%; height: auto; border:0; transform: scale(1); overflow:hidden;"
                 sandbox="allow-scripts allow-same-origin">
               </iframe>
             </code>
-        </div>
-        <h6 class="mt-5 mb-3"> Examples of different Images: </h6>
-        <p class="mb-3"> It can be used with 2 variants : img-round | img-square
-        </p>
-        <div class="component-display-wrapper">
-          <img loading="lazy" class="img-responsive img-round image-dummy-size p-3"
-            src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794__480.jpg" alt="cute-dog" />
+    </div>
+    <h6 class="mt-5 mb-3"> Examples of different Images: </h6>
+    <p class="mb-3"> It can be used with 2 variants : img-round | img-square
+    </p>
+    <div class="component-display-wrapper">
+      <img loading="lazy" class="img-responsive img-round image-dummy-size p-3"
+        src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794__480.jpg" alt="cute-dog" />
 
-          <img loading="lazy" class="img-responsive img-square image-dummy-size p-3"
-            src="https://cdn.pixabay.com/photo/2021/01/21/16/17/english-cocker-spaniel-5937757__480.jpg"
-            alt="cute-dog" />
+      <img loading="lazy" class="img-responsive img-square image-dummy-size p-3"
+        src="https://cdn.pixabay.com/photo/2021/01/21/16/17/english-cocker-spaniel-5937757__480.jpg" alt="cute-dog" />
+    </div>
+  </section>
+  <section id="Navigation">
+    <h4 class="mb-3">Navigation</h4>
+    <h6 class="mt-5 mb-3"> Example of Navigation: </h6>
+    <div class="component-display-wrapper">
+      <nav class="navbar box-shadow">
+        <div id="navbar-menu-desktop" class="navbar-section">
+          <div class="navbar-branding mr-3">
+            <a class="link-no-style" href="#">
+              Style Ship
+            </a>
+          </div>
+          <div class="navbar-options">
+            <button class="btn navbar-pills mx-2">
+              <a href="#" class="link-no-style"> Home </a>
+            </button>
+          </div>
         </div>
-      </section>
-      <section id="Navigation">
-        <h4 class="mb-3">Navigation</h4>
-        <h6 class="mt-5 mb-3"> Example of Navigation: </h6>
-        <div class="component-display-wrapper">
-          <nav class="navbar box-shadow">
-            <div id="navbar-menu-desktop" class="navbar-section">
-              <div class="navbar-branding mr-3">
-                <a class="link-no-style" href="#">
-                  Style Ship
-                </a>
-              </div>
-              <div class="navbar-options">
-                <button class="btn navbar-pills mx-2">
-                  <a href="#" class="link-no-style"> Home </a>
-                </button>
-              </div>
+        <div id="navbar-menu-mobile" class="navbar-section">
+          <button class="btn" onclick="openNav()">
+            <i class="fas fa-bars navbar-icon text-primary-color"></i>
+          </button>
+          <div id="toggle-navbar-sidedrawer" class="navbar-side-drawer box-shadow">
+            <div class="navbar-side-drawer-header p-4">
+              <span class="navbar-side-drawer-header-title"> Style Ship </span>
+              <button onclick="closeNav()" class="btn navbar-side-drawer-header-title">X</button>
             </div>
-            <div id="navbar-menu-mobile" class="navbar-section">
-              <button class="btn" onclick="openNav()">
-                <i class="fas fa-bars navbar-icon text-primary-color"></i>
-              </button>
-              <div id="toggle-navbar-sidedrawer" class="navbar-side-drawer box-shadow">
-                <div class="navbar-side-drawer-header p-4">
-                  <span class="navbar-side-drawer-header-title"> Style Ship </span>
-                  <button onclick="closeNav()" class="btn navbar-side-drawer-header-title">X</button>
-                </div>
-                <ul class="sidebar-menu">
-                  <li class="p-4 navbar-side-drawer-menu-items"> <a href="#" class="link-no-style"> Home </a> </li>
-              </div>
-            </div>
-            <div class="navbar-section">
-              <button class="btn navbar-pills ml-2 navbar-icon" id="theme-toggle">
-                <i class="fas fa-moon"></i>
-              </button>
-            </div>
-          </nav>
+            <ul class="sidebar-menu">
+              <li class="p-4 navbar-side-drawer-menu-items"> <a href="#" class="link-no-style"> Home </a> </li>
+          </div>
         </div>
-        <p class="mb-3"> CSS Code: </p>
-        <div class="code-snippet-display">
-          <code>
+        <div class="navbar-section">
+          <button class="btn navbar-pills ml-2 navbar-icon" id="theme-toggle">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+    <p class="mb-3"> CSS Code: </p>
+    <div class="code-snippet-display">
+      <code>
             <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=javascript&width=496&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cnav%2520class%253D%2522navbar%2520box-shadow%2522%253E%250A%2520%2520%253Cdiv%2520id%253D%2522navbar-menu-desktop%2522%2520class%253D%2522navbar-section%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522navbar-branding%2520mr-3%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522link-no-style%2522%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Style%2520Ship%250A%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522navbar-options%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520navbar-pills%2520mx-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522link-no-style%2522%253E%2520Home%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520id%253D%2522navbar-menu-mobile%2522%2520class%253D%2522navbar-section%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2522%2520onclick%253D%2522openNav%28%29%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-bars%2520navbar-icon%2520text-primary-color%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cdiv%2520id%253D%2522toggle-navbar-sidedrawer%2522%2520class%253D%2522navbar-side-drawer%2520box-shadow%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522navbar-side-drawer-header%2520p-4%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522navbar-side-drawer-header-title%2522%253E%2520Style%2520Ship%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520onclick%253D%2522closeNav%28%29%2522%2520class%253D%2522btn%2520navbar-side-drawer-header-title%2522%253EX%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522sidebar-menu%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522p-4%2520navbar-side-drawer-menu-items%2522%253E%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522link-no-style%2522%253E%2520Home%2520%253C%252Fa%253E%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522navbar-section%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520navbar-pills%2520ml-2%2520navbar-icon%2522%2520id%253D%2522theme-toggle%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-moon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fnav%253E"
                     style="width: 100%; height: auto; border:0; transform: scale(1); overflow:hidden;"
                     sandbox="allow-scripts allow-same-origin">
             </iframe>
           </code>
-        </div>
-        <p class="mb-3"> JS Code: </p>
-        <div class="code-snippet-display">
-          <code>
+    </div>
+    <p class="mb-3"> JS Code: </p>
+    <div class="code-snippet-display">
+      <code>
             <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=javascript&width=496&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=const%2520sidebar%2520%253D%2520document.getElementById%28%2522toggle-navbar-sidedrawer%2522%29%253B%250A%250Afunction%2520openNav%28%29%2520%257B%250A%2520%2520sidebar.style.width%2520%253D%2520%2522250px%2522%253B%250A%257D%250A%250Afunction%2520closeNav%28%29%2520%257B%250A%2520%2520sidebar.style.width%2520%253D%2520%25220%2522%253B%250A%257D%250A"
                     style="width: 100%; height: auto; border:0; transform: scale(1); overflow:hidden;"
                     sandbox="allow-scripts allow-same-origin">
             </iframe>
           </code>
-        </div>
-      </section>
-      <section id="Rating">
-        <h4 class="mb-3">Rating</h4>
-        <h6 class="mt-5 mb-3"> Example of Rating: </h6>
-        <div class="component-display-wrapper flex-column">
-          <ul class="stars">
-            <li class="star">
-              <i class="fas fa-star rating-star-icon"></i>
-            </li>
-            <li class="star">
-              <i class="fas fa-star rating-star-icon"></i>
-            </li>
-            <li class="star">
-              <i class="fas fa-star rating-star-icon"></i>
-            </li>
-            <li class="star">
-              <i class="fas fa-star rating-star-icon"></i>
-            </li>
-            <li class="star">
-              <i class="fas fa-star rating-star-icon"></i>
-            </li>
-          </ul>
-        </div>
-        <div class="code-snippet-display">
-          <code>
+    </div>
+  </section>
+  <section id="Rating">
+    <h4 class="mb-3">Rating</h4>
+    <h6 class="mt-5 mb-3"> Example of Rating: </h6>
+    <div class="component-display-wrapper flex-column">
+      <ul class="stars">
+        <li class="star">
+          <i class="fas fa-star rating-star-icon"></i>
+        </li>
+        <li class="star">
+          <i class="fas fa-star rating-star-icon"></i>
+        </li>
+        <li class="star">
+          <i class="fas fa-star rating-star-icon"></i>
+        </li>
+        <li class="star">
+          <i class="fas fa-star rating-star-icon"></i>
+        </li>
+        <li class="star">
+          <i class="fas fa-star rating-star-icon"></i>
+        </li>
+      </ul>
+    </div>
+    <div class="code-snippet-display">
+      <code>
+            <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=javascript&width=496&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522stars%2522%253E%250A%253Cli%2520class%253D%2522star%2522%253E%250A%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-star-icon%2522%253E%253C%252Fi%253E%250A%253C%252Fli%253E%250A%253Cli%2520class%253D%2522star%2522%253E%250A%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-star-icon%2522%253E%253C%252Fi%253E%250A%253C%252Fli%253E%250A%253Cli%2520class%253D%2522star%2522%253E%250A%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-star-icon%2522%253E%253C%252Fi%253E%250A%253C%252Fli%253E%250A%253Cli%2520class%253D%2522star%2522%253E%250A%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-star-icon%2522%253E%253C%252Fi%253E%250A%253C%252Fli%253E%250A%253Cli%2520class%253D%2522star%2522%253E%250A%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-star-icon%2522%253E%253C%252Fi%253E%250A%253C%252Fli%253E%250A%253C%252Ful%253E"
+            style="width: 100%; height: auto; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+          </code>
+    </div>
+  </section>
+  <section id="Slider">
+    <h4 class="mb-3">Slider</h4>
+    <h6 class="mt-5 mb-3"> Example of Slider: </h6>
+    <div class="component-display-wrapper">
+      <input type="range" class="slider" min="0" max="10" step="2" />
+    </div>
+    <div class="code-snippet-display">
+      <code>
               <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=javascript&width=496&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cinput%2520type%253D%2522range%2522%2520class%253D%2522slider%2522%2520min%253D%25220%2522%2520max%253D%252210%2522%2520step%253D%25222%2522%2520%252F%253E"
                       style="width: 100%; height: auto; border:0; transform: scale(1); overflow:hidden;"
                       sandbox="allow-scripts allow-same-origin">
               </iframe>
             </code>
-        </div>
-      </section>
-      <section id="Slider">
-        <h4 class="mb-3">Slider</h4>
-        <h6 class="mt-5 mb-3"> Example of Slider: </h6>
-        <div class="component-display-wrapper">
-          <input type="range" class="slider" min="0" max="10" step="2" />
-        </div>
-        <div class="code-snippet-display">
-          <code>
-              <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=javascript&width=496&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cinput%2520type%253D%2522range%2522%2520class%253D%2522slider%2522%2520min%253D%25220%2522%2520max%253D%252210%2522%2520step%253D%25222%2522%2520%252F%253E"
-                      style="width: 100%; height: auto; border:0; transform: scale(1); overflow:hidden;"
-                      sandbox="allow-scripts allow-same-origin">
-              </iframe>
-            </code>
-        </div>
-      </section>
-      <section id="Typography">
-        <h4 class="mb-3">Typography</h4>
-        <h6 class="mt-5 mb-3">Example of Heading text </h6>
-        <p class="mb-3"> It can be used with 6 variants : h1 | h2 | h3 | h4 | h5 | h6 </p>
-        <div class="component-display-wrapper flex-column">
-          <h1>This is h1 heading</h1>
-          <h2>This is h2 heading</h2>
-          <h3>This is h3 heading</h3>
-          <h4>This is h4 heading</h4>
-          <h5>This is h5 heading</h5>
-          <h6>This is h6 heading</h6>
-        </div>
-        <div class="code-snippet-display">
-          <code>
+    </div>
+  </section>
+  <section id="Typography">
+    <h4 class="mb-3">Typography</h4>
+    <h6 class="mt-5 mb-3">Example of Heading text </h6>
+    <p class="mb-3"> It can be used with 6 variants : h1 | h2 | h3 | h4 | h5 | h6 </p>
+    <div class="component-display-wrapper flex-column">
+      <h1>This is h1 heading</h1>
+      <h2>This is h2 heading</h2>
+      <h3>This is h3 heading</h3>
+      <h4>This is h4 heading</h4>
+      <h5>This is h5 heading</h5>
+      <h6>This is h6 heading</h6>
+    </div>
+    <div class="code-snippet-display">
+      <code>
             <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=javascript&width=496&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ch1%253EThis%2520is%2520h1%2520heading%253C%252Fh1%253E%250A%253Ch2%253EThis%2520is%2520h2%2520heading%253C%252Fh2%253E%250A%253Ch3%253EThis%2520is%2520h3%2520heading%253C%252Fh3%253E%250A%253Ch4%253EThis%2520is%2520h4%2520heading%253C%252Fh4%253E%250A%253Ch5%253EThis%2520is%2520h5%2520heading%253C%252Fh5%253E%250A%253Ch6%253EThis%2520is%2520h6%2520heading%253C%252Fh6%253E"
                     style="width: 100%; height: auto; border:0; transform: scale(1); overflow:hidden;"
                     sandbox="allow-scripts allow-same-origin">
             </iframe>
           </code>
-        </div>
-        <h6 class="mt-5 mb-3">Example of Text with different styles </h6>
-        <div class="component-display-wrapper flex-column">
-          <p class="text-primary-color mb-2">This is primary colored text</p>
-          <p class="text-secondary-color mb-2">This is secondary colored text</p>
-          <p class="text-disabled mb-2">This is disabled text</p>
-          <p class="text-uppercase mb-2">This is uppercased text</p>
-          <p class="text-lowercase mb-2">This is lowercased text</p>
-          <p class="text-capitalise mb-2">This is capitalised text</p>
-          <p class="text-small mb-2">This is small text</p>
-          <p class="text-big mb-2">This is big text</p>
-          <p class="text-light mb-2">This is light text</p>
-          <p class="text-bold mb-2">This is bold text</p>
-          <p class="text-italic mb-2">This is italiced text</p>
-          <p class="text-underline mb-2">This is underlined text</p>
-        </div>
-        <div class="code-snippet-display">
-          <code>
+    </div>
+    <h6 class="mt-5 mb-3">Example of Text with different styles </h6>
+    <div class="component-display-wrapper flex-column">
+      <p class="text-primary-color mb-2">This is primary colored text</p>
+      <p class="text-secondary-color mb-2">This is secondary colored text</p>
+      <p class="text-disabled mb-2">This is disabled text</p>
+      <p class="text-uppercase mb-2">This is uppercased text</p>
+      <p class="text-lowercase mb-2">This is lowercased text</p>
+      <p class="text-capitalise mb-2">This is capitalised text</p>
+      <p class="text-small mb-2">This is small text</p>
+      <p class="text-big mb-2">This is big text</p>
+      <p class="text-light mb-2">This is light text</p>
+      <p class="text-bold mb-2">This is bold text</p>
+      <p class="text-italic mb-2">This is italiced text</p>
+      <p class="text-underline mb-2">This is underlined text</p>
+    </div>
+    <div class="code-snippet-display">
+      <code>
             <iframe
               src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=javascript&width=496&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522text-primary-color%2520mb-2%2522%253EThis%2520is%2520primary%2520colored%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-secondary-color%2520mb-2%2522%253EThis%2520is%2520secondary%2520colored%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-disabled%2520mb-2%2522%253EThis%2520is%2520disabled%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-uppercase%2520mb-2%2522%253EThis%2520is%2520uppercased%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-lowercase%2520mb-2%2522%253EThis%2520is%2520lowercased%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-capitalise%2520mb-2%2522%253EThis%2520is%2520capitalised%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-small%2520mb-2%2522%253EThis%2520is%2520small%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-big%2520mb-2%2522%253EThis%2520is%2520big%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-light%2520mb-2%2522%253EThis%2520is%2520light%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-bold%2520mb-2%2522%253EThis%2520is%2520bold%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-italic%2520mb-2%2522%253EThis%2520is%2520italiced%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-underline%2520mb-2%2522%253EThis%2520is%2520underlined%2520text%253C%252Fp%253E"
               style="width: 100%; height: auto; border:0; transform: scale(1); overflow:hidden;"
               sandbox="allow-scripts allow-same-origin">
             </iframe>
           </code>
-        </div>
-      </section>
     </div>
+  </section>
+  </div>
   </section>
   <footer class="footer text-center">
     <div class="footer-header mb-2">
