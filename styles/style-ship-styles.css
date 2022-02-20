@@ -90,6 +90,7 @@
 
 .component-display-wrapper > .example-modal{
   display: block;
+  z-index: 1;
 }
 
 /*************** Media Queries for Small Screens ***************/
