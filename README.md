@@ -23,19 +23,19 @@ And you are ready to use this file.
 StyleShip is powered with the following components. These components are always being updated and imporved.
 
 <ul>
-    <li><a href="">Alert</a></li>
-    <li><a href="">Alerts</a></li>
-    <li><a href="">Avatar</a></li>
-    <li><a href="">Badge</a></li>
-    <li><a href="">Button</a></li>
-    <li><a href="">Cards</a></li>
-    <li><a href="">Image</a></li>
-    <li><a href="">Input</a></li>
-    <li><a href=""> Typography</a></li>
-    <li><a href=""> Navigation </a></li>
-    <li><a href=""> Modal </a></li>
-    <li><a href=""> Rating </a></li>
-    <li><a href=""> Simplified Grid </a></li>
+    <li><a href="https://style-ship.netlify.app/pages/documentation.html#Alerts">Alert</a></li>
+    <li><a href="https://style-ship.netlify.app/pages/documentation.html#Avatar">Avatar</a></li>
+    <li><a href="https://style-ship.netlify.app/pages/documentation.html#Badge">Badge</a></li>
+    <li><a href="https://style-ship.netlify.app/pages/documentation.html#Button">Button</a></li>
+    <li><a href="https://style-ship.netlify.app/pages/documentation.html#Cards">Cards</a></li>
+     <li><a href="https://style-ship.netlify.app/pages/documentation.html#Form">Form Elements</a></li>
+    <li><a href="https://style-ship.netlify.app/pages/documentation.html#Grid">Grid Simplified</a></li>
+    <li><a href="https://style-ship.netlify.app/pages/documentation.html#Grid">Image</a></li>
+    <li><a href="https://style-ship.netlify.app/pages/documentation.html#Modal"> Modal </a></li>
+    <li><a href="https://style-ship.netlify.app/pages/documentation.html#Navigation"> Navigation </a></li>
+    <li><a href="https://style-ship.netlify.app/pages/documentation.html#Rating"> Rating </a></li>
+    <li><a href="https://style-ship.netlify.app/pages/documentation.html#Slider"> Slider </a></li>
+    <li><a href="https://style-ship.netlify.app/pages/documentation.html#Typography"> Typography</a></li>
 </ul>
 
 
