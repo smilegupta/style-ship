@@ -84,6 +84,10 @@
   max-width: 500px;
 }
 
+.component-display-wrapper.dummy-form-container {
+  align-items: flex-start;
+}
+
 /*************** Media Queries for Small Screens ***************/
 
 @media screen and (max-width: 1024px) {
