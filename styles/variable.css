@@ -1,6 +1,7 @@
 :root {
   /* 1rem = 16px */
   --default-font-size: 87.5%; /* 14px */
+  --primary-color-light: #fbf2e6;
   --primary-color: #ca965c;
   --primary-bg: #ca965c1a;
   --primary-color-hover: #ba8b56;
@@ -34,4 +35,5 @@
   --form-elements-border: 0.25rem;
   --white: #ffffff;
   --black: #000000;
+  --overlay: rgba(0,0,0,0.5);
 }

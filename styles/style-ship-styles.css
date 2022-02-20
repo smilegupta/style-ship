@@ -88,6 +88,10 @@
   align-items: flex-start;
 }
 
+.component-display-wrapper > .example-modal{
+  display: block;
+}
+
 /*************** Media Queries for Small Screens ***************/
 
 @media screen and (max-width: 1024px) {

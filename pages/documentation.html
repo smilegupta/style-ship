@@ -18,6 +18,7 @@
   <script src="../javascript/sidebar.js" defer></script>
   <script src="../javascript/rating.js" defer></script>
   <script src="../javascript/formvalidation.js" defer></script>
+  <script src="../javascript/modal.js" defer></script>
   <!-- Page Title-->
   <title>Style Ship | Documentation</title>
 </head>
@@ -104,9 +105,6 @@
         </li>
         <li class="list-non-bullet sidebar-item">
           <a class="link-no-style" href="#Navigation">Navigation</a>
-        </li>
-        <li class="list-non-bullet sidebar-item">
-          <a class="link-no-style" href="#Lists">Lists</a>
         </li>
         <li class="list-non-bullet sidebar-item">
           <a class="link-no-style" href="#Rating">Rating</a>
@@ -589,6 +587,40 @@
           </form>
         </div>
       </section>
+      <section id="Grid">
+        <h4 class="mb-3">Grid Simplified</h4>
+        <h6 class="mt-5 mb-3"> Example of 50-50 layout: </h6>
+        <div class="component-display-wrapper">
+          <div class="grid-50-50-layout">
+              <div>
+                  <img class="img-responsive" src="https://cdn.pixabay.com/photo/2014/09/03/20/15/shoes-434918_1280.jpg">
+              </div>
+              <div class="d-flex justify-content-center align-center flex-column">
+                <h3 class="mb-2">Combo Pack!</h3>
+                <h5 class="mb-2">Starting At Rs.799</h5>
+                <button class="btn btn-outline-primary my-4">
+                  Explore now!
+                </button>
+              </div>
+            </div>
+        </div>
+        <h6 class="mt-5 mb-3"> Example of 70-30 layout: </h6>
+        <div class="component-display-wrapper">
+          <div class="grid-70-30-layout">
+            <div>
+                <img class="img-responsive" src="https://cdn.pixabay.com/photo/2014/09/03/20/15/shoes-434918_1280.jpg">
+            </div>
+            <div class="d-flex justify-content-center align-center flex-column">
+              <h3 class="mb-2">Combo Pack!</h3>
+              <h5 class="mb-2">Starting At Rs.799</h5>
+              <button class="btn btn-outline-primary my-4">
+                Explore now!
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </section>
       <section id="Image">
         <h4 class="mb-3">Images</h4>
         <h6 class="mt-5 mb-3"> Example of Responsive Image: </h6>
@@ -615,6 +647,58 @@
           <img loading="lazy" class="img-responsive img-square image-dummy-size p-3"
             src="https://cdn.pixabay.com/photo/2021/01/21/16/17/english-cocker-spaniel-5937757__480.jpg"
             alt="cute-dog" />
+        </div>
+      </section>
+      <section id="Modal">
+        <h4 class="mb-3">Modal</h4>
+        <h6 class="mt-5 mb-3"> Example of Modal: </h6>
+        <div class="component-display-wrapper">
+          <div class="modal-wrapper example-modal">
+            <div class="modal">
+              <div class="modal-close-cta">
+                <button class="btn">
+                  X
+                </button>
+              </div>
+              <div class="modal-content">
+                <div class="modal-content-title mb-2">
+                  <h4>Shop with exclusive offers</h4>
+                </div>
+                <div class="modal-content-description text-center mb-4">
+                  <p>White and blue printed playsuit with knot detail, has a shirt collar, sleeveless,
+                    button closures</p>
+                </div>
+                <div class="modal-content-footer">
+                  <button class="btn btn-outline-primary mx-2">Go Back</button> <button class="btn btn-solid-primary mx-2">Shop Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h6 class="mt-5 mb-3"> Live Demo: </h6>
+        <div class="component-display-wrapper">
+          <button class="btn btn-solid-primary" id="modal-demo-example">Click Me!</button>
+          <div class="modal-wrapper" id="example-modal">
+            <div class="modal">
+              <div class="modal-close-cta">
+                <button class="btn" id="modal-close-cta">
+                  X
+                </button>
+              </div>
+              <div class="modal-content">
+                <div class="modal-content-title mb-2">
+                  <h4>Shop with exclusive offers</h4>
+                </div>
+                <div class="modal-content-description text-center mb-4">
+                  <p>White and blue printed playsuit with knot detail, has a shirt collar, sleeveless,
+                    button closures</p>
+                </div>
+                <div class="modal-content-footer">
+                  <button class="btn btn-outline-primary mx-2" id="modal-go-back-btn">Go Back</button> <button class="btn btn-solid-primary mx-2">Shop Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section id="Navigation">
@@ -657,20 +741,20 @@
         <p class="mb-3"> CSS Code: </p>
         <div class="code-snippet-display">
           <code>
-            <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=javascript&width=496&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cnav%2520class%253D%2522navbar%2520box-shadow%2522%253E%250A%2520%2520%253Cdiv%2520id%253D%2522navbar-menu-desktop%2522%2520class%253D%2522navbar-section%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522navbar-branding%2520mr-3%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522link-no-style%2522%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Style%2520Ship%250A%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522navbar-options%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520navbar-pills%2520mx-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522link-no-style%2522%253E%2520Home%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520id%253D%2522navbar-menu-mobile%2522%2520class%253D%2522navbar-section%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2522%2520onclick%253D%2522openNav%28%29%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-bars%2520navbar-icon%2520text-primary-color%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cdiv%2520id%253D%2522toggle-navbar-sidedrawer%2522%2520class%253D%2522navbar-side-drawer%2520box-shadow%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522navbar-side-drawer-header%2520p-4%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522navbar-side-drawer-header-title%2522%253E%2520Style%2520Ship%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520onclick%253D%2522closeNav%28%29%2522%2520class%253D%2522btn%2520navbar-side-drawer-header-title%2522%253EX%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522sidebar-menu%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522p-4%2520navbar-side-drawer-menu-items%2522%253E%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522link-no-style%2522%253E%2520Home%2520%253C%252Fa%253E%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522navbar-section%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520navbar-pills%2520ml-2%2520navbar-icon%2522%2520id%253D%2522theme-toggle%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-moon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fnav%253E"
-                    style="width: 100%; height: auto; border:0; transform: scale(1); overflow:hidden;"
-                    sandbox="allow-scripts allow-same-origin">
-            </iframe>
-          </code>
+                <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=javascript&width=496&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cnav%2520class%253D%2522navbar%2520box-shadow%2522%253E%250A%2520%2520%253Cdiv%2520id%253D%2522navbar-menu-desktop%2522%2520class%253D%2522navbar-section%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522navbar-branding%2520mr-3%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522link-no-style%2522%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Style%2520Ship%250A%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522navbar-options%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520navbar-pills%2520mx-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522link-no-style%2522%253E%2520Home%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520id%253D%2522navbar-menu-mobile%2522%2520class%253D%2522navbar-section%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2522%2520onclick%253D%2522openNav%28%29%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-bars%2520navbar-icon%2520text-primary-color%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cdiv%2520id%253D%2522toggle-navbar-sidedrawer%2522%2520class%253D%2522navbar-side-drawer%2520box-shadow%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522navbar-side-drawer-header%2520p-4%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522navbar-side-drawer-header-title%2522%253E%2520Style%2520Ship%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520onclick%253D%2522closeNav%28%29%2522%2520class%253D%2522btn%2520navbar-side-drawer-header-title%2522%253EX%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522sidebar-menu%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522p-4%2520navbar-side-drawer-menu-items%2522%253E%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522link-no-style%2522%253E%2520Home%2520%253C%252Fa%253E%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522navbar-section%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520navbar-pills%2520ml-2%2520navbar-icon%2522%2520id%253D%2522theme-toggle%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-moon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fnav%253E"
+                        style="width: 100%; height: auto; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                </iframe>
+              </code>
         </div>
         <p class="mb-3"> JS Code: </p>
         <div class="code-snippet-display">
           <code>
-            <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=javascript&width=496&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=const%2520sidebar%2520%253D%2520document.getElementById%28%2522toggle-navbar-sidedrawer%2522%29%253B%250A%250Afunction%2520openNav%28%29%2520%257B%250A%2520%2520sidebar.style.width%2520%253D%2520%2522250px%2522%253B%250A%257D%250A%250Afunction%2520closeNav%28%29%2520%257B%250A%2520%2520sidebar.style.width%2520%253D%2520%25220%2522%253B%250A%257D%250A"
-                    style="width: 100%; height: auto; border:0; transform: scale(1); overflow:hidden;"
-                    sandbox="allow-scripts allow-same-origin">
-            </iframe>
-          </code>
+                <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=javascript&width=496&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=const%2520sidebar%2520%253D%2520document.getElementById%28%2522toggle-navbar-sidedrawer%2522%29%253B%250A%250Afunction%2520openNav%28%29%2520%257B%250A%2520%2520sidebar.style.width%2520%253D%2520%2522250px%2522%253B%250A%257D%250A%250Afunction%2520closeNav%28%29%2520%257B%250A%2520%2520sidebar.style.width%2520%253D%2520%25220%2522%253B%250A%257D%250A"
+                        style="width: 100%; height: auto; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                </iframe>
+              </code>
         </div>
       </section>
       <section id="Rating">
@@ -697,12 +781,12 @@
         </div>
         <div class="code-snippet-display">
           <code>
-            <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=javascript&width=496&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522stars%2522%253E%250A%253Cli%2520class%253D%2522star%2522%253E%250A%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-star-icon%2522%253E%253C%252Fi%253E%250A%253C%252Fli%253E%250A%253Cli%2520class%253D%2522star%2522%253E%250A%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-star-icon%2522%253E%253C%252Fi%253E%250A%253C%252Fli%253E%250A%253Cli%2520class%253D%2522star%2522%253E%250A%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-star-icon%2522%253E%253C%252Fi%253E%250A%253C%252Fli%253E%250A%253Cli%2520class%253D%2522star%2522%253E%250A%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-star-icon%2522%253E%253C%252Fi%253E%250A%253C%252Fli%253E%250A%253Cli%2520class%253D%2522star%2522%253E%250A%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-star-icon%2522%253E%253C%252Fi%253E%250A%253C%252Fli%253E%250A%253C%252Ful%253E"
-            style="width: 100%; height: auto; border:0; transform: scale(1); overflow:hidden;"
-            sandbox="allow-scripts allow-same-origin">
-          </iframe>
-          </code>
+                <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=javascript&width=496&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522stars%2522%253E%250A%253Cli%2520class%253D%2522star%2522%253E%250A%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-star-icon%2522%253E%253C%252Fi%253E%250A%253C%252Fli%253E%250A%253Cli%2520class%253D%2522star%2522%253E%250A%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-star-icon%2522%253E%253C%252Fi%253E%250A%253C%252Fli%253E%250A%253Cli%2520class%253D%2522star%2522%253E%250A%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-star-icon%2522%253E%253C%252Fi%253E%250A%253C%252Fli%253E%250A%253Cli%2520class%253D%2522star%2522%253E%250A%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-star-icon%2522%253E%253C%252Fi%253E%250A%253C%252Fli%253E%250A%253Cli%2520class%253D%2522star%2522%253E%250A%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-star-icon%2522%253E%253C%252Fi%253E%250A%253C%252Fli%253E%250A%253C%252Ful%253E"
+                style="width: 100%; height: auto; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe>
+              </code>
         </div>
       </section>
       <section id="Slider">
@@ -713,11 +797,11 @@
         </div>
         <div class="code-snippet-display">
           <code>
-              <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=javascript&width=496&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cinput%2520type%253D%2522range%2522%2520class%253D%2522slider%2522%2520min%253D%25220%2522%2520max%253D%252210%2522%2520step%253D%25222%2522%2520%252F%253E"
-                      style="width: 100%; height: auto; border:0; transform: scale(1); overflow:hidden;"
-                      sandbox="allow-scripts allow-same-origin">
-              </iframe>
-            </code>
+                  <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=javascript&width=496&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cinput%2520type%253D%2522range%2522%2520class%253D%2522slider%2522%2520min%253D%25220%2522%2520max%253D%252210%2522%2520step%253D%25222%2522%2520%252F%253E"
+                          style="width: 100%; height: auto; border:0; transform: scale(1); overflow:hidden;"
+                          sandbox="allow-scripts allow-same-origin">
+                  </iframe>
+                </code>
         </div>
       </section>
       <section id="Typography">
@@ -734,11 +818,11 @@
         </div>
         <div class="code-snippet-display">
           <code>
-            <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=javascript&width=496&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ch1%253EThis%2520is%2520h1%2520heading%253C%252Fh1%253E%250A%253Ch2%253EThis%2520is%2520h2%2520heading%253C%252Fh2%253E%250A%253Ch3%253EThis%2520is%2520h3%2520heading%253C%252Fh3%253E%250A%253Ch4%253EThis%2520is%2520h4%2520heading%253C%252Fh4%253E%250A%253Ch5%253EThis%2520is%2520h5%2520heading%253C%252Fh5%253E%250A%253Ch6%253EThis%2520is%2520h6%2520heading%253C%252Fh6%253E"
-                    style="width: 100%; height: auto; border:0; transform: scale(1); overflow:hidden;"
-                    sandbox="allow-scripts allow-same-origin">
-            </iframe>
-          </code>
+                <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=javascript&width=496&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ch1%253EThis%2520is%2520h1%2520heading%253C%252Fh1%253E%250A%253Ch2%253EThis%2520is%2520h2%2520heading%253C%252Fh2%253E%250A%253Ch3%253EThis%2520is%2520h3%2520heading%253C%252Fh3%253E%250A%253Ch4%253EThis%2520is%2520h4%2520heading%253C%252Fh4%253E%250A%253Ch5%253EThis%2520is%2520h5%2520heading%253C%252Fh5%253E%250A%253Ch6%253EThis%2520is%2520h6%2520heading%253C%252Fh6%253E"
+                        style="width: 100%; height: auto; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                </iframe>
+              </code>
         </div>
         <h6 class="mt-5 mb-3">Example of Text with different styles </h6>
         <div class="component-display-wrapper flex-column">
@@ -757,12 +841,12 @@
         </div>
         <div class="code-snippet-display">
           <code>
-            <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=javascript&width=496&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522text-primary-color%2520mb-2%2522%253EThis%2520is%2520primary%2520colored%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-secondary-color%2520mb-2%2522%253EThis%2520is%2520secondary%2520colored%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-disabled%2520mb-2%2522%253EThis%2520is%2520disabled%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-uppercase%2520mb-2%2522%253EThis%2520is%2520uppercased%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-lowercase%2520mb-2%2522%253EThis%2520is%2520lowercased%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-capitalise%2520mb-2%2522%253EThis%2520is%2520capitalised%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-small%2520mb-2%2522%253EThis%2520is%2520small%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-big%2520mb-2%2522%253EThis%2520is%2520big%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-light%2520mb-2%2522%253EThis%2520is%2520light%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-bold%2520mb-2%2522%253EThis%2520is%2520bold%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-italic%2520mb-2%2522%253EThis%2520is%2520italiced%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-underline%2520mb-2%2522%253EThis%2520is%2520underlined%2520text%253C%252Fp%253E"
-              style="width: 100%; height: auto; border:0; transform: scale(1); overflow:hidden;"
-              sandbox="allow-scripts allow-same-origin">
-            </iframe>
-          </code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-light&wt=none&l=javascript&width=496&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522text-primary-color%2520mb-2%2522%253EThis%2520is%2520primary%2520colored%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-secondary-color%2520mb-2%2522%253EThis%2520is%2520secondary%2520colored%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-disabled%2520mb-2%2522%253EThis%2520is%2520disabled%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-uppercase%2520mb-2%2522%253EThis%2520is%2520uppercased%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-lowercase%2520mb-2%2522%253EThis%2520is%2520lowercased%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-capitalise%2520mb-2%2522%253EThis%2520is%2520capitalised%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-small%2520mb-2%2522%253EThis%2520is%2520small%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-big%2520mb-2%2522%253EThis%2520is%2520big%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-light%2520mb-2%2522%253EThis%2520is%2520light%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-bold%2520mb-2%2522%253EThis%2520is%2520bold%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-italic%2520mb-2%2522%253EThis%2520is%2520italiced%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-underline%2520mb-2%2522%253EThis%2520is%2520underlined%2520text%253C%252Fp%253E"
+                  style="width: 100%; height: auto; border:0; transform: scale(1); overflow:hidden;"
+                  sandbox="allow-scripts allow-same-origin">
+                </iframe>
+              </code>
         </div>
       </section>
     </div>
