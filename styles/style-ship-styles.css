@@ -84,6 +84,15 @@
   max-width: 500px;
 }
 
+.component-display-wrapper.dummy-form-container {
+  align-items: flex-start;
+}
+
+.component-display-wrapper > .example-modal{
+  display: block;
+  z-index: 1;
+}
+
 /*************** Media Queries for Small Screens ***************/
 
 @media screen and (max-width: 1024px) {

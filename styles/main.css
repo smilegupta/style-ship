@@ -22,6 +22,8 @@
 @import "./utils.css";
 @import "./slider.css";
 @import "./rating.css";
+@import "./form-elements.css";
+@import "./modal.css";
 
 /*************** Project Initials ***************/
 *,
