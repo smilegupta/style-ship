@@ -34,6 +34,10 @@
   justify-content: center;
 }
 
+.justify-content-space-between{
+  justify-content: space-between;
+}
+
 .flex-row{
   flex-direction: row;
 }
