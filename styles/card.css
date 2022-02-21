@@ -8,6 +8,7 @@
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   box-shadow: var(--default-box-shadow);
+  height: fit-content;
 }
 
 /*************** Card Content Typography ***************/
