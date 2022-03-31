@@ -3,6 +3,5 @@
 }
 
 .list-item-inline {
-  display: inline;
-  padding: 0rem 0.5rem;
+  display: flex;
 }

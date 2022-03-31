@@ -93,6 +93,14 @@
   z-index: 1;
 }
 
+.component-display-wrapper > .toast{
+  display: block;
+  position: relative;
+    top: 0rem;
+    right: 0rem;
+    margin: 0px 5px;
+}
+
 /*************** Media Queries for Small Screens ***************/
 
 @media screen and (max-width: 1024px) {
