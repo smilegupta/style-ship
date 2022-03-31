@@ -17,6 +17,15 @@
   grid-template-columns: 50% 50%;
 }
 
+.grid-3-column-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 56.5rem;
+  margin: 0 auto;
+}
+
 .grid-4-column-layout {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -27,6 +36,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .grid-3-column-layout {
+    grid-template-columns: 1fr 1fr;
+  }
+  
   .grid-4-column-layout {
     grid-template-columns: 1fr 1fr;
   }
